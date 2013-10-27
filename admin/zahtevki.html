@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- Keywords -->
+
+    <!--Javascript files -->
+
+    <!--Website CSS File -->
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+
+    <!--Cool Icons-->
+    <link rel="stylesheet" href="../static/icons/css/font-awesome.css">
+
+    <title>Spisek mojih zahtevkov za pomoč</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Spletna stran za tehnično pomoč</h1>
+            <nav class="horizontal-menu">
+                <ul>
+                    <!--<li><a href="index.html">Domov</a></li>-->
+                    <li><a href="prijava_tezave.html">Vnos težave klicatelja</a></li>
+                    <li><a href="zahtevki.html">Zahtevki za pomoč</a></li>
+                    <li><a class="pull-right" href="../prijava.html"><i class="fa fa-user fa-2x"></i> Alberto Komputador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <section class="main">
+            <h3>Zahtevki za pomoč</h3>
+            <p>
+                Spisek vaših zahtevkov za pomoč, ki so že bili rešeni, ali pa še čakajo na obdelavo.
+            </p>
+            <div class="search">
+                <form action="zahtevki.html">
+                    <p>
+                        <label>Išči:</label>
+                        <input type = "search" name="search" placeholder = "Iskalni parameter" />
+                        <button class="btn" type ="submit">Potrdi</button>
+                    </p>
+                </form>
+            </div>
+            <table class="tabela-zahtevkov">
+                <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Težava</th>
+                    <th scope="col">Datum</th>
+                    <th scope="col">Področje</th>
+                    <th scope="col">Agent</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Akcije</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Problem z apache strežnikom</td>
+                        <td>26/10/2013</td>
+                        <td>Virtualni strežniki</td>
+                        <td>/</td>
+                        <td>Čaka na odziv agenta</td>
+                        <td><a href="podrobnosti_zahtevka.html"><i class="fa fa-ambulance"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Wireless router</td>
+                        <td>13/10/2013</td>
+                        <td>Internetna povezava</td>
+                        <td>Rolando Wirelez</td>
+                        <td>V obdelavi</td>
+                        <td><a href="podrobnosti_zahtevka.html"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Spam</td>
+                        <td>10/10/2013</td>
+                        <td>Varnostni incident</td>
+                        <td>Matjaž Pančur</td>
+                        <td>Čaka na odziv uporabnika</td>
+                        <td><a href="podrobnosti_zahtevka.html"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Izgubljeno geslo</td>
+                        <td>05/09/2013</td>
+                        <td>Drugo</td>
+                        <td>Alberto Komputador</td>
+                        <td>Zaključeno</td>
+                        <td><a href="podrobnosti_zahtevka.html"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="7" rowspan="1"><a href="prijava_tezave.html">Vnos težave klicatelja</a></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <!-- footer -->
+        <footer>
+            Vse pravice pridržane (c) 2013 <a href="http://www.divjak.si">divjak.si</a> <a class="pull-right" href="../index.html"><i class="fa fa-wheelchair"></i> Uporabnik</a>
+        </footer>
+    </div> <!--! end of #container -->
+</body>
+</html>

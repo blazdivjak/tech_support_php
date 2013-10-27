@@ -1,0 +1,460 @@
+body{
+    margin: 0px;
+}
+
+.container {
+    max-width:960px;
+    margin:auto;
+    /*margin-top:20px;*/
+    margin-top: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+
+header {
+    width: auto;
+    padding: 5px 0px 0px 0px;
+    height: 100px;
+    background-color: #f2f3f3;
+    border-bottom: 1px solid #e5e5e5;
+    /*text-shadow: 0 1px 0 rgba(0,0,0,.15);*/
+}
+
+header h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:24px;
+    color: #F07D3E;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+footer {
+    /*border-top: 2px dotted #333333 !important;*/
+    margin-top: 50px;
+    border-top: 2px dotted #e5e5e5 !important;
+    position:relative;
+    bottom:0;
+    padding: 10px 10px 10px 10px;
+    max-width: 960px;
+    height:10px; /*+*/
+}
+
+.row {
+    /*clear: both;*/
+    overflow: hidden;
+    /*position: relative;*/
+    /*border: 1px solid #990000;*/
+}
+.col-2 {
+    float: left;
+    width: 48%;
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+/*Navigacija */
+.horizontal-menu {
+    padding: 10px 10px 10px 0px;
+    width: auto;
+    height: 40px;
+    /*background-color: #e5e5e5;*/
+
+}
+.horizontal-menu a {
+    text-decoration:none;
+    color: #333333;
+}
+
+.horizontal-menu a:hover {
+    text-decoration:none;
+    color: #F07D3E;
+}
+
+.horizontal-menu ul {
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal-menu ul li{
+    margin-right: 30px;
+    line-height: 40px;
+    display: inline;
+    /* font settings */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #45535b;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Hitra gumba za prijavo in pregled incidentov */
+
+.prijava-tezave {
+    display: inline-block;
+    /*width: 50%;*/
+    height: 125px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    border-top: 4px solid #cc452c !important;
+    margin-top: 13px;
+    background-color: #ffffff;
+    position: relative;
+    padding-top: 10px;
+    padding-left: 10px;
+    /*z-index: 100;*/
+    background-color: #f2f3f3;
+
+}
+
+.prijava-tezave a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration:none;
+    color: #333333;
+}
+
+.prijava-tezave a:hover {
+    text-decoration:none;
+    color: #cc452c;
+    font-weight: bold;
+}
+
+.zahtevki {
+    display: inline-block;
+    /*width: 50%;*/
+    height: 125px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    border-top: 4px solid darkgreen !important;
+    margin-top: 13px;
+    background-color: #ffffff;
+    position: relative;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: #f2f3f3;
+    /*z-index: 100;*/
+}
+
+.zahtevki a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration:none;
+    color: #333333;
+}
+
+.zahtevki a:hover {
+    text-decoration:none;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+/*Ozadje velikih banner gumbov*/
+
+.prijava a {
+    /*background-image: url(/static/images/prijavi_p.png);*/
+}
+
+/* Premiki levo in desno */
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+.clear{
+    clear:both;
+}
+/* Fonti */
+
+h1{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:24px;
+    color:#F07D3E;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h3{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color:#F07D3E;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.title {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    color:#45535b;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+
+/*Global Link settings */
+.main a:link {
+    text-decoration:none;
+    color: #F07D3E;
+}
+
+.main a:visited {
+    text-decoration:none;
+    color: #F07D3E;
+}
+
+.main a:hover {
+    /*text-decoration:none;*/
+    text-decoration: none;
+    border-bottom: 1px dotted #F07D3E;
+    color: #F07D3E;
+}
+
+footer a:link {
+    text-decoration:none;
+    color: #F07D3E;
+}
+
+footer a:visited {
+    text-decoration:none;
+    color: #F07D3E;
+}
+
+footer a:hover {
+    /*text-decoration:none;*/
+    text-decoration: none;
+    border-bottom: 1px dotted #F07D3E;
+    color: #F07D3E;
+}
+
+/*Block header */
+/*
+.block-header {
+    color: #ffffff;
+    background-color: #3f3f3f;
+    margin: 0;
+    padding: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+*/
+/*Spisek korakov na prvi strani */
+
+ol.orange {
+    counter-reset:li; /* Initiate a counter */
+    margin-left:0; /* Remove the default left margin */
+    padding-left:0; /* Remove the default left padding */
+    margin-top: 20px;
+}
+
+ol.orange > li {
+    position: relative;
+    list-style: none;
+    display: block;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+ol.orange > li:before {
+    position: relative;
+    content:counter(li)'.';
+    /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+    /* Position and style the number */
+    font-size: 40px;
+    color: #F07D3E;
+    top:10px;
+    left:-30px;
+    font-weight: bold;
+}
+
+/*
+ol.orange a {
+    text-decoration:none;
+    color: #F07D3E;
+}
+
+ol.orange a:hover {
+    text-decoration: none;
+    border-bottom: 1px dotted #F07D3E;
+    color: #F07D3E;
+}
+*/
+/*Forme*/
+
+
+label {
+    width:150px;
+    float:left;
+    font-size:12px;
+    line-height:24px;
+    font-weight:bold;
+
+}
+input {
+    width:300px;
+    margin-bottom:5px;
+    line-height:18px;
+    padding:2px 5px;
+    border-radius: 5px;
+    border:1px solid #CCC;
+}
+
+input:focus
+{
+    background-color: #f2f3f3;
+    border-color: #F07D3E;
+    outline: #F07D3E;
+}
+textarea:focus{
+    background-color: #f2f3f3;
+    border-color: #F07D3E;
+    outline: #F07D3E;
+}
+
+textarea{
+    width:300px;
+    height: 200px;
+    margin-bottom:5px;
+    line-height:18px;
+    padding:2px 5px;
+    border-radius: 5px;
+    border:1px solid #CCC;
+}
+
+/* Search  form */
+.search label {
+    width:50px;
+    float:left;
+    font-size:12px;
+    line-height:24px;
+    font-weight:bold;
+}
+
+/* Gumbi */
+.btn {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #F07D3E;
+    width: 60px;
+    border-radius: 3px;
+    border:1px solid #F07D3E;
+}
+.btn:hover{
+    background-color: #c05a1a;
+}
+
+/* */
+
+.small {
+    width: 30px;
+    height: 20px;
+}
+
+.large {
+    width: 200px;
+    height: 40px;
+}
+
+/* tabela zahtevkov */
+table {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0px !important;
+    border-color: #f2f3f3;
+}
+
+table thead tr {
+    border-spacing: 0px;
+    border-bottom: 3px dotted #f2f3f3;
+}
+
+table tfoot tr {
+    border-spacing: 0px;
+    border-top: 3px dotted #f2f3f3;
+}
+
+.tabela-zahtevkov {
+    width: 100%;
+}
+
+.tabela-zahtevkov thead th {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #F07D3E;
+    padding: 12px 15px;
+}
+
+.tabela-zahtevkov tbody td {
+    text-align: center;
+    padding: 12px 15px;
+}
+
+.tabela-zahtevkov tfoot td{
+    text-align: left;
+    padding: 12px 15px;
+}
+
+table tbody tr:hover {
+    background-color: #f2f3f3;
+}
+
+/*Agent-User chat */
+
+.chat {
+    background-color: #f2f3f3;
+    /*border: 3px solid #e5e5e5;*/
+    border-radius: 5px;
+    width: 450px;
+    /*padding: 10px 0px 0px 10px;*/
+    padding: 0px 0px 0px 10px;
+    margin-bottom: 5px;
+}
+
+.agent{
+    border: 3px solid #e5e5e5;
+}
+
+.client{
+    border: 3px solid #F07D3E;
+}
+
+.nov-odgovor{
+    width: 450px;
+}
+
+/*Login window */
+
+.login {
+    background-color: #f2f3f3;
+    margin-top: 10%;
+    border-top: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;;
+    padding: 20px 20px 20px 20px;
+}
+
+.container-login {
+    max-width:400px;
+    margin:auto;
+    /*margin-top:20px;*/
+    margin-top: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+
