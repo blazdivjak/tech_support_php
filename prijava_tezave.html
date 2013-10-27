@@ -1,77 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <!-- Keywords -->
+    <head>
+        <meta charset="UTF-8">
+        <!-- Keywords -->
 
-    <!--Javascript files -->
+        <!--Javascript files -->
 
-    <!--Website CSS File -->
-    <link rel="stylesheet" type="text/css" href="static/style.css">
+        <!--Website CSS File -->
+        <link rel="stylesheet" type="text/css" href="static/style.css">
 
-    <!--Cool Icons-->
-    <link rel="stylesheet" href="static/icons/css/font-awesome.css">
+        <!--Cool Icons-->
+        <link rel="stylesheet" href="static/icons/css/font-awesome.css">
 
-    <title>Prijava težave</title>
-</head>
-<body>
-    <header>
+        <title>Prijava težave</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Spletna stran za tehnično pomoč</h1>
+                <nav class="horizontal-menu">
+                    <ul>
+                        <li><a href="index.html">Domov</a></li>
+                        <li><a href="prijava_tezave.html">Prijava težave</a></li>
+                        <li><a href="zahtevki.html">Moji zahtevki</a></li>
+                        <li><a class="pull-right" href="prijava.html"><i class="fa fa-user fa-2x"></i> Janez Novak</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <div class="container">
-            <h1>Spletna stran za tehnično pomoč</h1>
-            <nav class="horizontal-menu">
-                <ul>
-                    <li><a href="index.html">Domov</a></li>
-                    <li><a href="prijava_tezave.html">Prijava težave</a></li>
-                    <li><a href="zahtevki.html">Moji zahtevki</a></li>
-                    <li><a class="pull-right" href="prijava.html"><i class="fa fa-user fa-2x"></i> Janez Novak</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="container">
-        <section class="main">
-            <h3>Opis težave</h3>
-            <p>
-                Vnesite potrebne podatke, ki jih bodo naši tehniki uporabili pri reševanju vaše težave. Pomembno je, da vnesete telefonsko številko, na katero vas lahko kontaktirajo za dodatne informacije.
-            </p>
-            <form method="post" action="zahtevki.html">
+            <section class="main">
+                <h3>Opis težave</h3>
                 <p>
-                    <label>Težava:</label>
-                    <input type="text" maxlength="50" required autofocus="kratek_opis" name="kratek_opis" placeholder="Kratek opis težave"/>
+                    Vnesite potrebne podatke, ki jih bodo naši tehniki uporabili pri reševanju vaše težave. Pomembno je, da vnesete telefonsko številko, na katero vas lahko kontaktirajo za dodatne informacije.
                 </p>
-                <p>
-                    <label>Datum pričetka težave:</label>
-                    <input type = "date" required name="date" placeholder="(yyyy-mm-dd)" />
-                </p>
-                <p>
-                    <label for = "podrocje">Področje težave:</label>
-                    <input type = "text" required name="podrocje" id = "podrocje" placeholder = "Izberite področje, na katerem imate težave" list = "tezave" />
-                    <datalist id = "tezave">
-                        <option value = "Virtualni strežniki">
-                        <option value = "Internetna povezava">
-                        <option value = "E-Pošta">
-                        <option value = "Varnostni incident">
-                        <option value = "Drugo">
-                    </datalist>
-                </p>
-                <p>
-                    <label>Opis težave:</label>
-                    <textarea name="opis" required placeholder="Vnesite podroben opis težave"></textarea>
-                </p>
-                <p>
-                    <label>Telefonska številka:</label>
-                        <input type = "tel" placeholder = "### ###-###" pattern = "\d{3} +\d{3}-\d{3}" required />
-                </p>
-                <p>
-                    <button class="btn" type ="submit">Potrdi</button>
-                    <button class="btn" type ="reset">Prekliči</button>
-                </p>
-            </form>
-        </section>
-        <!-- footer -->
-        <footer>
-            Vse pravice pridržane (c) 2013 <a href="http://www.divjak.si">divjak.si</a> <a class="pull-right" href="admin/zahtevki.html"><i class="fa fa-user-md"></i> Študent/Strokovnjak</a>
-        </footer>
-    </div> <!--! end of #container -->
-</body>
+                <form method="post" action="zahtevki.html">
+                    <p>
+                        <label>Težava:</label>
+                        <input type="text" maxlength="50" required autofocus name="kratek_opis" placeholder="Kratek opis težave"/>
+                    </p>
+                    <p>
+                        <label>Datum pričetka težave:</label>
+                        <input type = "date" required name="date"/>
+                    </p>
+                    <p>
+                        <label for = "podrocje">Področje težave:</label>
+                        <input type = "text" required name="podrocje" id = "podrocje" placeholder = "Izberite področje, na katerem imate težave" list = "tezave" />
+                        <datalist id = "tezave">
+                            <option value = "Virtualni strežniki">
+                            <option value = "Internetna povezava">
+                            <option value = "E-Pošta">
+                            <option value = "Varnostni incident">
+                            <option value = "Drugo">
+                        </datalist>
+                    </p>
+                    <p>
+                        <label>Opis težave:</label>
+                        <textarea name="opis" required placeholder="Vnesite podroben opis težave"></textarea>
+                    </p>
+                    <p>
+                        <label>Telefonska številka:</label>
+                            <input type = "tel" placeholder = "### ###-###" pattern = "\d{3} +\d{3}-\d{3}" required />
+                    </p>
+                    <p>
+                        <button class="btn" type ="submit">Potrdi</button>
+                        <button class="btn" type ="reset">Prekliči</button>
+                    </p>
+                </form>
+            </section>
+            <!-- footer -->
+            <footer>
+                Vse pravice pridržane (c) 2013 <a href="http://www.divjak.si">divjak.si</a> <a class="pull-right" href="admin/zahtevki.html"><i class="fa fa-user-md"></i> Študent/Strokovnjak</a>
+            </footer>
+        </div> <!--! end of #container -->
+    </body>
 </html>

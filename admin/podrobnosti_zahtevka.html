@@ -1,213 +1,213 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
-<head>
-    <meta charset="UTF-8">
-    <!-- Keywords -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- Keywords -->
 
-    <!--Javascript files -->
+        <!--Javascript files -->
 
-    <!--Website CSS File -->
-    <link rel="stylesheet" type="text/css" href="../static/style.css">
+        <!--Website CSS File -->
+        <link rel="stylesheet" type="text/css" href="../static/style.css">
 
-    <!--Cool Icons-->
-    <link rel="stylesheet" href="../static/icons/css/font-awesome.css">
+        <!--Cool Icons-->
+        <link rel="stylesheet" href="../static/icons/css/font-awesome.css">
 
-    <title>Spisek mojih zahtevkov za pomoč</title>
-</head>
-<body>
-    <header>
+        <title>Spisek mojih zahtevkov za pomoč</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Spletna stran za tehnično pomoč</h1>
+                <nav class="horizontal-menu">
+                    <ul>
+                        <!--<li><a href="index.html">Domov</a></li>-->
+                        <li><a href="prijava_tezave.html">Vnos težave klicatelja</a></li>
+                        <li><a href="zahtevki.html">Zahtevki za pomoč</a></li>
+                        <li><a class="pull-right" href="../prijava.html"><i class="fa fa-user fa-2x"></i> Alberto Komputador</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <div class="container">
-            <h1>Spletna stran za tehnično pomoč</h1>
-            <nav class="horizontal-menu">
-                <ul>
-                    <!--<li><a href="index.html">Domov</a></li>-->
-                    <li><a href="prijava_tezave.html">Vnos težave klicatelja</a></li>
-                    <li><a href="zahtevki.html">Zahtevki za pomoč</a></li>
-                    <li><a class="pull-right" href="../prijava.html"><i class="fa fa-user fa-2x"></i> Alberto Komputador</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="container">
-        <section class="main">
-            <h3>Zahtevki za pomoč</h3>
-            <p>
-                Spisek vaših zahtevkov za pomoč, ki so že bili rešeni, ali pa še čakajo na obdelavo.
-            </p>
-            <div class="search">
-                <form action="zahtevki.html">
-                    <p>
-                        <label>Išči:</label>
-                        <input type = "search" name="search" placeholder = "Iskalni parameter" />
-                        <button class="btn" type ="submit">Potrdi</button>
-                    </p>
-                </form>
-            </div>
-            <table class="tabela-zahtevkov">
-                <thead>
-                <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Težava</th>
-                    <th scope="col">Datum</th>
-                    <th scope="col">Področje</th>
-                    <th scope="col">Agent</th>
-                    <th scope="col">Status</th>
-                    <th scope="col">Akcije</th>
-                </tr>
-                </thead>
-                <tbody>
+            <section class="main">
+                <h3>Zahtevki za pomoč</h3>
+                <p>
+                    Spisek vaših zahtevkov za pomoč, ki so že bili rešeni, ali pa še čakajo na obdelavo.
+                </p>
+                <div class="search">
+                    <form action="zahtevki.html">
+                        <p>
+                            <label>Išči:</label>
+                            <input type = "search" name="search" placeholder = "Iskalni parameter" />
+                            <button class="btn" type ="submit">Potrdi</button>
+                        </p>
+                    </form>
+                </div>
+                <table class="tabela-zahtevkov">
+                    <thead>
                     <tr>
-                        <td>1</td>
-                        <td>Problem z apache strežnikom</td>
-                        <td>26/10/2013</td>
-                        <td>Virtualni strežniki</td>
-                        <td>/</td>
-                        <td>Čaka na odziv agenta</td>
-                        <td><a href="#"><i class="fa fa-pencil-square-o"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
+                        <th scope="col">ID</th>
+                        <th scope="col">Težava</th>
+                        <th scope="col">Datum</th>
+                        <th scope="col">Področje</th>
+                        <th scope="col">Agent</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Akcije</th>
                     </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Wireless router</td>
-                        <td>13/10/2013</td>
-                        <td>Internetna povezava</td>
-                        <td>Rolando Wirelez</td>
-                        <td>V obdelavi</td>
-                        <td><a href="podrobnosti_zahtevka.html"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Spam</td>
-                        <td>10/10/2013</td>
-                        <td>Varnostni incident</td>
-                        <td>Matjaž Pančur</td>
-                        <td>Čaka na odziv uporabnika</td>
-                        <td><a href="podrobnosti_zahtevka.html"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Izgubljeno geslo</td>
-                        <td>05/09/2013</td>
-                        <td>Drugo</td>
-                        <td>Alberto Komputador</td>
-                        <td>Zaključeno</td>
-                        <td><a href="podrobnosti_zahtevka.html"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="7" rowspan="1"><a href="prijava_tezave.html">Vnos težave klicatelja</a></td>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Problem z apache strežnikom</td>
+                            <td>26/10/2013</td>
+                            <td>Virtualni strežniki</td>
+                            <td>/</td>
+                            <td>Čaka na odziv agenta</td>
+                            <td><a href="#"><i class="fa fa-pencil-square-o"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Wireless router</td>
+                            <td>13/10/2013</td>
+                            <td>Internetna povezava</td>
+                            <td>Rolando Wirelez</td>
+                            <td>V obdelavi</td>
+                            <td><a href="podrobnosti_zahtevka.html"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Spam</td>
+                            <td>10/10/2013</td>
+                            <td>Varnostni incident</td>
+                            <td>Matjaž Pančur</td>
+                            <td>Čaka na odziv uporabnika</td>
+                            <td><a href="podrobnosti_zahtevka.html"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Izgubljeno geslo</td>
+                            <td>05/09/2013</td>
+                            <td>Drugo</td>
+                            <td>Alberto Komputador</td>
+                            <td>Zaključeno</td>
+                            <td><a href="podrobnosti_zahtevka.html"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="7" rowspan="1"><a href="prijava_tezave.html">Vnos težave klicatelja</a></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
 
-        <!--Ticket details -->
-        <section class="ticket-details">
-            <h3>Podrobnosti zahtevka</h3>
-            <p>
-                ID:
-            </p>
-            <p>
-                Težava:
-            </p>
-            <p>
-                Datum:
-            </p>
-            <p>
-                Področje težave:
-            </p>
-            <p>
-                Opis težave:
-            </p>
-            <p>
-                Status:
-            </p>
-            <h3>Kontaktni podatki uporabnika</h3>
-            <p>
-                Uporabniško ime:
-            </p>
-            <p>
-                Mail:
-            </p>
-            <p>
-                Telefon:
-            </p>
-            <button class="btn large">Prevzemi primer</button> <button class="btn large">Eskaliraj</button>
+            <!--Ticket details -->
+            <section class="ticket-details">
+                <h3>Podrobnosti zahtevka</h3>
+                <p>
+                    ID:
+                </p>
+                <p>
+                    Težava:
+                </p>
+                <p>
+                    Datum:
+                </p>
+                <p>
+                    Področje težave:
+                </p>
+                <p>
+                    Opis težave:
+                </p>
+                <p>
+                    Status:
+                </p>
+                <h3>Kontaktni podatki uporabnika</h3>
+                <p>
+                    Uporabniško ime:
+                </p>
+                <p>
+                    Mail:
+                </p>
+                <p>
+                    Telefon:
+                </p>
+                <button class="btn large">Prevzemi primer</button> <button class="btn large">Eskaliraj</button>
 
-            <!--Odzivi -->
-            <h3>Odziv agenta</h3>
-            <div class="chat agent pull-left">
-                <p>
-                    <b>10.10.2013 10:15 Matjaž Pančur</b>
-                </p>
-                <p>
-                    Do težave je prišlo, ker ste imeli nameščen neposodobljen PHP, kar je omogočilo zlobnim kitajcem, da vam v Joomlo prešvercajo hrošče in črve.
-                </p>
-            </div>
-            <div class="clear"></div>
-            <div class="chat client pull-right">
-                <p>
-                    <b>10.10.2013 13:15 Janez Novak</b>
-                </p>
-                <p>
-                    To ni res, jaz imam vse posodobljeno! Težava je na vaši strani....
-                </p>
-            </div>
-            <div class="clear"></div>
-            <div class="chat agent pull-left">
-                <p>
-                    <b>10.10.2013 13:16 Matjaž Pančur</b>
-                </p>
-                <p>
-                    Čimprej posodobite na zadnjo verzijo PHP 5.6 in ponovno namestite Joomlo
-                </p>
-            </div>
-            <div class="clear"></div>
-            <div class="chat agent pull-left">
-                <p>
-                    <b>15.10.2013 08:00 Matjaž Pančur</b>
-                </p>
-                <p>
-                    Opomnik, da čimprej posodobite. Začasno smo vam izključili strežnik apache.
-                </p>
-            </div>
-            <div class="clear"></div>
-            <div class="chat agent pull-left">
-                <p>
-                    <b>26.10.2013 10:15 Matjaž Pančur</b>
-                </p>
-                <p>
-                    Če še vedno ne boste posodobili PHP-ja na strežniku vam ga bomo morali za vedno ugasniti. Sedaj imate na strežniku že za en živalski vrt črvov
-                    hročov in podobne nesnage. Rok za ureditev imate do jutri. Predlagamo, da si preberete tudi FAQ, ki ga je pripravil borec proti zlobnim volkom Strašni Lev.
-                </p>
-            </div>
-            <div class="clear"></div>
-            <div class="chat client pull-right">
-                <p>
-                    <b>26.10.2013 11:00 Janez Novak</b>
-                </p>
-                <p>
-                    Vse smo posodobili. Sedaj spet vse deluje. Z moje strani lahko primer zapremo.
-                </p>
-            </div>
-            <div class="clear"></div>
-            <div class="nov-odgovor">
-                <form method="post" action="#">
+                <!--Odzivi -->
+                <h3>Odziv agenta</h3>
+                <div class="chat agent pull-left">
                     <p>
-                        <label>Novo sporočilo:</label>
-                        <textarea name="message" required placeholder="Sporočilo za tehnično pomoč"></textarea>
+                        <b>10.10.2013 10:15 Matjaž Pančur</b>
                     </p>
                     <p>
-                        <button class="btn" type="submit">Pošlji</button>
+                        Do težave je prišlo, ker ste imeli nameščen neposodobljen PHP, kar je omogočilo zlobnim kitajcem, da vam v Joomlo prešvercajo hrošče in črve.
                     </p>
-                </form>
-            </div>
-            <div class="clear"></div>
-        </section>
-        <!-- footer -->
-        <footer>
-            Vse pravice pridržane (c) 2013 <a href="http://www.divjak.si">divjak.si</a> <a class="pull-right" href="../index.html"><i class="fa fa-wheelchair"></i> Uporabnik</a>
-        </footer>
-    </div> <!--! end of #container -->
-</body>
+                </div>
+                <div class="clear"></div>
+                <div class="chat client pull-right">
+                    <p>
+                        <b>10.10.2013 13:15 Janez Novak</b>
+                    </p>
+                    <p>
+                        To ni res, jaz imam vse posodobljeno! Težava je na vaši strani....
+                    </p>
+                </div>
+                <div class="clear"></div>
+                <div class="chat agent pull-left">
+                    <p>
+                        <b>10.10.2013 13:16 Matjaž Pančur</b>
+                    </p>
+                    <p>
+                        Čimprej posodobite na zadnjo verzijo PHP 5.6 in ponovno namestite Joomlo
+                    </p>
+                </div>
+                <div class="clear"></div>
+                <div class="chat agent pull-left">
+                    <p>
+                        <b>15.10.2013 08:00 Matjaž Pančur</b>
+                    </p>
+                    <p>
+                        Opomnik, da čimprej posodobite. Začasno smo vam izključili strežnik apache.
+                    </p>
+                </div>
+                <div class="clear"></div>
+                <div class="chat agent pull-left">
+                    <p>
+                        <b>26.10.2013 10:15 Matjaž Pančur</b>
+                    </p>
+                    <p>
+                        Če še vedno ne boste posodobili PHP-ja na strežniku vam ga bomo morali za vedno ugasniti. Sedaj imate na strežniku že za en živalski vrt črvov
+                        hročov in podobne nesnage. Rok za ureditev imate do jutri. Predlagamo, da si preberete tudi FAQ, ki ga je pripravil borec proti zlobnim volkom Strašni Lev.
+                    </p>
+                </div>
+                <div class="clear"></div>
+                <div class="chat client pull-right">
+                    <p>
+                        <b>26.10.2013 11:00 Janez Novak</b>
+                    </p>
+                    <p>
+                        Vse smo posodobili. Sedaj spet vse deluje. Z moje strani lahko primer zapremo.
+                    </p>
+                </div>
+                <div class="clear"></div>
+                <div class="nov-odgovor">
+                    <form method="post" action="#">
+                        <p>
+                            <label>Novo sporočilo:</label>
+                            <textarea name="message" required placeholder="Sporočilo za tehnično pomoč"></textarea>
+                        </p>
+                        <p>
+                            <button class="btn" type="submit">Pošlji</button>
+                        </p>
+                    </form>
+                </div>
+                <div class="clear"></div>
+            </section>
+            <!-- footer -->
+            <footer>
+                Vse pravice pridržane (c) 2013 <a href="http://www.divjak.si">divjak.si</a> <a class="pull-right" href="../index.html"><i class="fa fa-wheelchair"></i> Uporabnik</a>
+            </footer>
+        </div> <!--! end of #container -->
+    </body>
 </html>
