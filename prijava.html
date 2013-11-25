@@ -5,6 +5,8 @@
     <!-- Keywords -->
 
     <!--Javascript files -->
+    <script src="js/jquery/js/jquery-1.9.1.js"></script>
+    <script src="js/jquery/js/jquery-ui-1.10.3.custom.js"></script>
 
     <!--Website CSS File -->
     <link rel="stylesheet" type="text/css" href="static/style.css">
@@ -12,7 +14,7 @@
     <!--Cool Icons-->
     <link rel="stylesheet" href="static/icons/css/font-awesome.css">
 
-    <title>Prijava v spletno aplikacijo za pomoč</title>
+    <title id="title">Prijava v spletno aplikacijo za pomoč</title>
 </head>
 <body>
 <!--
@@ -32,21 +34,23 @@
         -->
         <section class="login">
             <div class="container-login">
-                <h3>Prijava</h3>
-                <p>
+                <h3 id="header">Prijava</h3>
+                <p id="login_text">
                     Vnesite uporabniško ime in geslo
                 </p>
                 <form method="post" action="index.html">
                     <p>
-                        <label>Uporabniško ime:</label>
-                        <input type="text" maxlength="50" required autofocus name="username" placeholder="Uporabniško ime"/>
+                        <label id="username_text">Uporabniško ime:</label>
+                        <input type="text" maxlength="50" required autofocus name="username" id="username" placeholder="Uporabniško ime"/>
+                        <br/><span id="username_error" class="error-report"></span>
                     </p>
                     <p>
-                        <label>Geslo:</label>
-                        <input type="password" name="opis" required placeholder="Geslo"/>
+                        <label id="password_text">Geslo:</label>
+                        <input type="password" id="password" name="opis" required placeholder="Geslo"/>
+                        <br/><span id="password_error" class="error-report"></span>
                     </p>
                     <p>
-                        <button class="btn" type ="submit">Prijava</button>
+                        <button class="btn" type ="submit" id="submit">Prijava</button>
                     </p>
                 </form>
             </div>
@@ -55,6 +59,8 @@
     <div class="container-login">
        <footer>
            Vse pravice pridržane (c) 2013 <a href="http://www.divjak.si">divjak.si</a>
+           <!--Website Javscript files -->
+           <script src="js/login_validation.js" type="text/javascript"></script>
        </footer>
     </div> <!--! end of #container -->
 </body>

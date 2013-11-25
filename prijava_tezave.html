@@ -5,9 +5,14 @@
         <!-- Keywords -->
 
         <!--Javascript files -->
+        <script src="js/jquery/js/jquery-1.9.1.js"></script>
+        <script src="js/jquery/js/jquery-ui-1.10.3.custom.js"></script>
 
         <!--Website CSS File -->
         <link rel="stylesheet" type="text/css" href="static/style.css">
+
+        <!-- JQuery CSS Files -->
+        <link rel="stylesheet" type="text/css" href="js/jquery/css/ui-lightness/jquery-ui-1.10.3.custom.css">
 
         <!--Cool Icons-->
         <link rel="stylesheet" href="static/icons/css/font-awesome.css">
@@ -34,15 +39,24 @@
                 <p>
                     Vnesite potrebne podatke, ki jih bodo naši tehniki uporabili pri reševanju vaše težave. Pomembno je, da vnesete telefonsko številko, na katero vas lahko kontaktirajo za dodatne informacije.
                 </p>
-                <form method="post" action="zahtevki.html">
+                <form id="prijava_tezave" method="post" action="zahtevki.html">
                     <p>
                         <label>Težava:</label>
-                        <input type="text" maxlength="50" required autofocus name="kratek_opis" placeholder="Kratek opis težave"/>
+                        <input type="text" maxlength="50" required autofocus name="kratek_opis" id="kratek_opis" placeholder="Kratek opis težave"/> <span id="kratek_opis_error" class="error-report"></span>
                     </p>
-                    <p>
+
+                    <!--Staro HTML5, nekateri brskalniki ne prikazujejo -->
+                    <!--<p>
                         <label>Datum pričetka težave:</label>
                         <input type = "date" required name="date"/>
+                    </p>-->
+                    <p>
+                        <label>Datum pričetka težave:</label>
+                        <input type ="text" required id="datepicker" placeholder="dd/mm/llll" name="date"/> <span id="datepicker_error" class="error-report"></span>
                     </p>
+
+                    <!--Staro HTML5, nekateri brskalniki ne prikazujejo -->
+                    <!--
                     <p>
                         <label for = "podrocje">Področje težave:</label>
                         <input type = "text" required name="podrocje" id = "podrocje" placeholder = "Izberite področje, na katerem imate težave" list = "tezave" />
@@ -53,24 +67,36 @@
                             <option value = "Varnostni incident">
                             <option value = "Drugo">
                         </datalist>
+                    </p>-->
+                    <p>
+                        <label for = "podrocje">Področje težave:</label>
+                        <input id="podrocje" /> <span id="podrocje_error" class="error-report"></span>
                     </p>
                     <p>
                         <label>Opis težave:</label>
-                        <textarea name="opis" required placeholder="Vnesite podroben opis težave"></textarea>
+                        <textarea name="opis" id="opis" required placeholder="Vnesite podroben opis težave"></textarea> <span id="opis_error" class="error-report"></span>
                     </p>
-                    <p>
+                    <!--Staro HTML5, nekateri brskalniki ne prikazujejo -->
+                    <!--<p>
                         <label>Telefonska številka:</label>
                             <input type = "tel" placeholder = "### ###-###" pattern = "\d{3} +\d{3}-\d{3}" required />
+                    </p>-->
+                    <p>
+                        <label>Telefonska številka:</label>
+                        <input type = "text" placeholder = "###-###-###" name="tel" id="tel"/> <span id="tel_error" class="error-report"></span>
                     </p>
                     <p>
-                        <button class="btn" type ="submit">Potrdi</button>
-                        <button class="btn" type ="reset">Prekliči</button>
+                        <button class="btn" id="submit" name="submit" type ="submit">Potrdi</button>
+                        <button class="btn" id="reset" type ="reset">Prekliči</button>
                     </p>
                 </form>
             </section>
             <!-- footer -->
             <footer>
                 Vse pravice pridržane (c) 2013 <a href="http://www.divjak.si">divjak.si</a> <a class="pull-right" href="admin/zahtevki.html"><i class="fa fa-user-md"></i> Študent/Strokovnjak</a>
+                <!--Website Javscript files -->
+                <script src="js/sp.js"></script>
+                <script src="js/validation.js" type="text/javascript"></script>
             </footer>
         </div> <!--! end of #container -->
     </body>

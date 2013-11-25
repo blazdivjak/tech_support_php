@@ -54,7 +54,7 @@ footer {
     margin-right: 0px;
 }
 
-/*Navigacija */
+/*Nav */
 .horizontal-menu {
     padding: 10px 10px 10px 0px;
     width: auto;
@@ -160,7 +160,7 @@ footer {
     /*background-image: url(/static/images/prijavi_p.png);*/
 }
 
-/* Premiki levo in desno */
+/* move stuff left and right */
 
 .pull-right {
     float: right !important;
@@ -172,7 +172,7 @@ footer {
 .clear{
     clear:both;
 }
-/* Fonti */
+/* Fonts */
 
 h1{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -250,7 +250,7 @@ footer a:hover {
     border-top-right-radius: 6px;
 }
 */
-/*Spisek korakov na prvi strani */
+/*steps displayed on first page */
 
 ol.orange {
     counter-reset:li; /* Initiate a counter */
@@ -293,7 +293,7 @@ ol.orange a:hover {
     color: #F07D3E;
 }
 */
-/*Forme*/
+/*Forms*/
 
 
 label {
@@ -335,6 +335,19 @@ textarea{
     border:1px solid #CCC;
 }
 
+/* error on validation */
+.error {
+    border: 2px solid red;
+}
+.error-report {
+    color: red;
+    font-size: 80%;
+}
+
+.normal{
+    border: 1px solid #ccc;
+}
+
 /* Search  form */
 .search label {
     width:50px;
@@ -344,8 +357,24 @@ textarea{
     font-weight:bold;
 }
 
-/* Gumbi */
+/*Searchbox hint displayed with javascript on searchbox hover */
+.search-hint{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 0px solid #F07D3E;
+    background-color: #f2f3f3;
+    border-radius: 5px;
+    padding-left: 50px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.standout{
+    border: 3px solid #F07D3E;
+}
+
+/* buttons */
 .btn {
+    margin: 1px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #ffffff;
@@ -370,7 +399,7 @@ textarea{
     height: 40px;
 }
 
-/* tabela zahtevkov */
+/* ticket table */
 table {
     display: table;
     border-collapse: collapse;
@@ -436,6 +465,10 @@ table tbody tr:hover {
 
 .nov-odgovor{
     width: 450px;
+}
+
+.custom-tooltip{
+    font-size: 50%;
 }
 
 /*Login window */
