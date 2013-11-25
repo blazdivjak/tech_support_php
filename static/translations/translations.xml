@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations xmlns="http://www.divjak.si/sp/translationsSchema">
+
+    <!-- Translations for SP Technical support website -->
+
+    <!--Index page-->
+    <page id="index">
+        <translation id="title">
+            <english>Technical support website</english>
+            <slovenian>Spletna stran za tehnično pomoč</slovenian>
+        </translation>
+        <translation id="header">
+            <english>Error reporting made easy</english>
+            <slovenian>Prijava tehničnih napak na preprost način</slovenian>
+        </translation>
+        <translation id="page_header">
+            <english>Technical support website</english>
+            <slovenian>Spletna stran za tehnično pomoč</slovenian>
+        </translation>
+        <translation id="home">
+            <english>Home</english>
+            <slovenian>Domov</slovenian>
+        </translation>
+        <translation id="problem_report">
+            <english>Report problem</english>
+            <slovenian>Prijava težave</slovenian>
+        </translation>
+        <translation id="tickets">
+            <english>My tickets</english>
+            <slovenian>Moji zahtevki</slovenian>
+        </translation>
+        <translation id="login">
+            <english>Login</english>
+            <slovenian>Prijava</slovenian>
+        </translation>
+    </page>
+    <!--Login page-->
+    <page id="prijava">
+        <translation id="title">
+            <english>Login into application for technical help</english>
+            <slovenian>Prijava v spletno aplikacijo za pomoč</slovenian>
+        </translation>
+        <translation id="header">
+            <english>Login</english>
+            <slovenian>Prijava</slovenian>
+        </translation>
+        <translation id="login_text">
+            <english>Enter your username and password</english>
+            <slovenian>Vnesite uporabniško ime in geslo</slovenian>
+        </translation>
+        <translation id="username_text">
+            <english>Username:</english>
+            <slovenian>Uporabniško ime:</slovenian>
+        </translation>
+        <translation id="password_text">
+            <english>Password:</english>
+            <slovenian>Geslo:</slovenian>
+        </translation>
+    </page>
+    <!--Page with tickets-->
+    <page id="tickets">
+        <translation id="title">
+            <english>List of my help tickets</english>
+            <slovenian>Spisek mojih zahtevkov za pomoč</slovenian>
+        </translation>
+        <translation id="search_label">
+            <english>Search:</english>
+            <slovenian>Išči:</slovenian>
+        </translation>
+        <translation id="problem">
+            <english>Problem</english>
+            <slovenian>Težava</slovenian>
+        </translation>
+        <translation id="date">
+            <english>Date</english>
+            <slovenian>Datum</slovenian>
+        </translation>
+        <translation id="field">
+            <english>Field</english>
+            <slovenian>Področje</slovenian>
+        </translation>
+        <translation id="agent">
+            <english>Agent</english>
+            <slovenian>Agent</slovenian>
+        </translation>
+        <translation id="status">
+            <english>Status</english>
+            <slovenian>Status</slovenian>
+        </translation>
+        <translation id="action">
+            <english>Actions</english>
+            <slovenian>Akcije</slovenian>
+        </translation>
+    </page>
+</translations>

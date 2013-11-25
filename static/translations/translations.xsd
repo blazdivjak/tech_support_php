@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+        attributeFormDefault="unqualified"
+        targetNamespace="http://www.divjak.si/sp/translationsSchema"
+        xmlns="http://www.divjak.si/sp/translationsSchema"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified"
+        version="1.0">
+    <xs:annotation>
+        <xs:documentation>
+            Document title: Schema for SP Class project 2013/2014, first published in November 2013.
+            Document identifier: sp-translation-schema-1.0
+            Location: http://www.divjak.si/sp/schemas
+            Revision history:
+            V1.0 (November, 2013):
+        </xs:documentation>
+    </xs:annotation>
+
+  <xs:element name="translations" type="translationsType"/>
+  <xs:complexType name="pageType">
+    <xs:sequence>
+      <xs:element type="translationType" name="translation" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="translationsType">
+    <xs:sequence>
+      <xs:element type="pageType" name="page" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="translationType">
+    <xs:sequence>
+      <xs:element name="english">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="slovenian">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+</xs:schema>
