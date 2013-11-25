@@ -491,3 +491,14 @@ table tbody tr:hover {
     color: #333333;
 }
 
+.lang-change{
+    font-size: 80%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.lang-change:hover{
+    text-decoration: none;
+    border-bottom: 1px dotted #F07D3E;
+    color: #F07D3E;
+}
+

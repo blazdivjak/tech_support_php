@@ -6,18 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c458f24d-2c47-47ec-a812-57c915c4eeb5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/change_language.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/change_language.js" afterPath="$PROJECT_DIR$/js/change_language.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/podrobnosti_zahtevka.html" afterPath="$PROJECT_DIR$/podrobnosti_zahtevka.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/podrobnosti_zahtevka.html" afterPath="$PROJECT_DIR$/admin/podrobnosti_zahtevka.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prijava.html" afterPath="$PROJECT_DIR$/prijava.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prijava_tezave.html" afterPath="$PROJECT_DIR$/prijava_tezave.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/prijava_tezave.html" afterPath="$PROJECT_DIR$/admin/prijava_tezave.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style.css" afterPath="$PROJECT_DIR$/static/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zahtevki.html" afterPath="$PROJECT_DIR$/zahtevki.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/zahtevki.html" afterPath="$PROJECT_DIR$/admin/zahtevki.html" />
     </list>
     <ignored path="ProjektSpletnoProgramiranje.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,55 +31,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="translations.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/translations/translations.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="35" selection-start="834" selection-end="834" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readxml.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/readxml.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="19" selection-start="51" selection-end="61" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="50" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.09319899" vertical-offset="421" max-vertical-offset="1215">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zahtevki.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zahtevki.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="71" selection-start="5227" selection-end="5282" vertical-scroll-proportion="-26.833334" vertical-offset="1006" max-vertical-offset="1800">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sp.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/sp.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="457" max-vertical-offset="1275">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="change_language.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/change_language.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="28" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+            <state line="74" column="18" selection-start="3276" selection-end="3276" vertical-scroll-proportion="0.79219145" vertical-offset="481" max-vertical-offset="1275">
               <folding />
             </state>
           </provider>
@@ -119,15 +65,15 @@
         <option value="$PROJECT_DIR$/js/validation.js" />
         <option value="$PROJECT_DIR$/js/admin_validation.js" />
         <option value="$PROJECT_DIR$/podrobnosti_zahtevka.html" />
-        <option value="$PROJECT_DIR$/static/style.css" />
         <option value="$PROJECT_DIR$/admin/podrobnosti_zahtevka.html" />
         <option value="$PROJECT_DIR$/admin/zahtevki.html" />
         <option value="$PROJECT_DIR$/prijava_tezave.html" />
         <option value="$PROJECT_DIR$/js/sp.js" />
         <option value="$PROJECT_DIR$/zahtevki.html" />
         <option value="$PROJECT_DIR$/static/translations/translations.xml" />
-        <option value="$PROJECT_DIR$/js/change_language.js" />
+        <option value="$PROJECT_DIR$/static/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/change_language.js" />
       </list>
     </option>
   </component>
@@ -309,7 +255,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="977" extended-state="0" />
+    <frame x="0" y="22" width="1680" height="977" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -381,13 +327,6 @@
         <state line="150" column="81" selection-start="3733" selection-end="3733" vertical-scroll-proportion="1.3524591" vertical-offset="1095" max-vertical-offset="2370" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="5" selection-start="1078" selection-end="1078" vertical-scroll-proportion="-7.275218" vertical-offset="6682" max-vertical-offset="7485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/podrobnosti_zahtevka.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="201" column="41" selection-start="8938" selection-end="8938" vertical-scroll-proportion="0.6969697" vertical-offset="2463" max-vertical-offset="3255" />
@@ -413,34 +352,6 @@
         <state line="97" column="0" selection-start="4981" selection-end="4981" vertical-scroll-proportion="0.7916667" vertical-offset="828" max-vertical-offset="1620" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/translations/translations.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="35" selection-start="834" selection-end="834" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/translations/translations.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="710" selection-end="710" vertical-scroll-proportion="0.3068592" vertical-offset="0" max-vertical-offset="831">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/readxml.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="51" selection-end="61" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="457" max-vertical-offset="1275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zahtevki.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="110" column="71" selection-start="5227" selection-end="5282" vertical-scroll-proportion="-26.833334" vertical-offset="1006" max-vertical-offset="1800">
@@ -448,16 +359,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/readxml.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="35" selection-start="0" selection-end="310" vertical-scroll-proportion="0.10830325" vertical-offset="0" max-vertical-offset="831">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="501" column="19" selection-start="9000" selection-end="9000" vertical-scroll-proportion="0.85559565" vertical-offset="6804" max-vertical-offset="7650">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="53" selection-start="1659" selection-end="1659" vertical-scroll-proportion="0.54156476" vertical-offset="457" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/translations/translations.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="25" selection-start="415" selection-end="421" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/translations/translations.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="19" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.7761733" vertical-offset="0" max-vertical-offset="831">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/change_language.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="28" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding />
+        <state line="26" column="6" selection-start="529" selection-end="529" vertical-scroll-proportion="0.46931407" vertical-offset="0" max-vertical-offset="831">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="50" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.09319899" vertical-offset="421" max-vertical-offset="1215">
+        <state line="74" column="18" selection-start="3276" selection-end="3276" vertical-scroll-proportion="0.79219145" vertical-offset="481" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>
