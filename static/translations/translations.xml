@@ -33,6 +33,22 @@
             <english>Login</english>
             <slovenian>Prijava</slovenian>
         </translation>
+        <translation id="moji_zahtevki">
+            <english>My requests</english>
+            <slovenian>Moji zahtevki</slovenian>
+        </translation>
+        <translation id="prijava_tezave">
+            <english>Report your problem to our experts</english>
+            <slovenian>Prijavi težavo našim strokovnjakom</slovenian>
+        </translation>
+        <translation id="problem">
+            <english>Do you have a problem with our services?</english>
+            <slovenian>Imate težave pri uporabi naših storitev?</slovenian>
+        </translation>
+        <translation id="view_tickets">
+            <english>View my tickets</english>
+            <slovenian>Pregled mojih zahtevkov</slovenian>
+        </translation>
     </page>
     <!--Login page-->
     <page id="prijava">
@@ -58,7 +74,7 @@
         </translation>
     </page>
     <!--Page with tickets-->
-    <page id="tickets">
+    <page id="zahtevki">
         <translation id="title">
             <english>List of my help tickets</english>
             <slovenian>Spisek mojih zahtevkov za pomoč</slovenian>
@@ -90,6 +106,26 @@
         <translation id="action">
             <english>Actions</english>
             <slovenian>Akcije</slovenian>
+        </translation>
+        <translation id="home">
+            <english>Home</english>
+            <slovenian>Domov</slovenian>
+        </translation>
+        <translation id="problem_report">
+            <english>Report problem</english>
+            <slovenian>Prijava težave</slovenian>
+        </translation>
+        <translation id="tickets">
+            <english>My tickets</english>
+            <slovenian>Moji zahtevki</slovenian>
+        </translation>
+        <translation id="login">
+            <english>Login</english>
+            <slovenian>Prijava</slovenian>
+        </translation>
+        <translation id="moji_zahtevki">
+            <english>My requests</english>
+            <slovenian>Moji zahtevki</slovenian>
         </translation>
     </page>
 </translations>

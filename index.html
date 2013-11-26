@@ -5,6 +5,8 @@
     <!-- Keywords -->
 
     <!--Javascript files -->
+    <script src="js/jquery/js/jquery-1.9.1.js"></script>
+    <script src="js/jquery/js/jquery-ui-1.10.3.custom.js"></script>
 
     <!--Website CSS File -->
     <link rel="stylesheet" type="text/css" href="static/style.css">
@@ -20,10 +22,10 @@
             <h1 id="page_header">Spletna stran za tehnično pomoč</h1>
             <nav class="horizontal-menu">
                 <ul>
-                    <li id="home"><a href="index.html">Domov</a></li>
-                    <li id="problem_report"><a href="prijava_tezave.html">Prijava težave</a></li>
-                    <li id="tickets"><a href="zahtevki.html">Moji zahtevki</a></li>
-                    <li id="login"><a class="pull-right" href="prijava.html"><i class="fa fa-user fa-2x"></i> Prijava</a></li>
+                    <li><a id="home" href="index.html">Domov</a></li>
+                    <li><a id="problem_report" href="prijava_tezave.html">Prijava težave</a></li>
+                    <li><a id="tickets" href="zahtevki.html">Moji zahtevki</a></li>
+                    <li><a class="pull-right" href="prijava.html"><i class="fa fa-user fa-2x"></i><span id="login"> Prijava</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -32,17 +34,17 @@
         <nav>
             <div class="row">
                 <div class="prijava-tezave col-2">
-                    <div class="title">Imate težave pri uporabi naših storitev?</div>
+                    <div id="problem" class="title">Imate težave pri uporabi naših storitev?</div>
                     <p>
                         <a href="prijava_tezave.html"><i class="fa fa-user-md fa-5x"></i></a>
-                        <a href="prijava_tezave.html">Prijavi težavo našim strokovnjakom</a>
+                        <a id="prijava_tezave" href="prijava_tezave.html">Prijavi težavo našim strokovnjakom</a>
                     </p>
                 </div>
                 <div class="zahtevki col-2">
-                    <div class="title">Pregled mojih zahtevkov</div>
+                    <div id="view_tickets" class="title">Pregled mojih zahtevkov</div>
                     <p>
                         <a href="zahtevki.html"><i class="fa fa-h-square fa-5x animate"></i></a>
-                        <a href="zahtevki.html">Moji zahtevki</a>
+                        <a id="moji_zahtevki" href="zahtevki.html">Moji zahtevki</a>
                     </p>
                 </div>
             </div>
@@ -71,7 +73,7 @@
             <br/>
             <!--Lang Change -->
             <div id="lang_change">
-                <span class="lang-change" id="english">Angleščina</span> | <span class="lang-change" id="slovenian">Slovenščina</span>
+                <a href="" id="english">Angleščina</a> | <a href="" id="slovenian">Slovenščina</a>
             </div>
             <script src="js/change_language.js" type="text/javascript"></script>
         </footer>
