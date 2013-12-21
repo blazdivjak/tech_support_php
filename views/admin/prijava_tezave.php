@@ -1,36 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <!-- Keywords -->
-
-    <!--Javascript files -->
-    <script src="../../js/jquery/js/jquery-1.9.1.js"></script>
-    <script src="../../js/jquery/js/jquery-ui-1.10.3.custom.js"></script>
-
-    <!--Website CSS File -->
-    <link rel="stylesheet" type="text/css" href="../../static/style.css">
-
-    <!-- JQuery CSS Files -->
-    <link rel="stylesheet" type="text/css" href="../../js/jquery/css/ui-lightness/jquery-ui-1.10.3.custom.css">
-
-    <!--Cool Icons-->
-    <link rel="stylesheet" href="../../static/icons/css/font-awesome.css">
-
-    <title>Vnos težave prijavljene preko telefona</title>
-</head>
+<?php
+include 'include/header.php';
+?>
 <body>
     <header>
         <div class="container">
             <h1>Spletna stran za tehnično pomoč</h1>
-            <nav class="horizontal-menu">
-                <ul>
-                    <!--<li><a href="../index.html">Domov</a></li>-->
-                    <li><a href="prijava_tezave.html">Vnos težave klicatelja</a></li>
-                    <li><a href="zahtevki.html">Zahtevki za pomoč</a></li>
-                    <li><a class="pull-right" href="../login/prijava.html"><i class="fa fa-user fa-2x"></i> Alberto Komputador</a></li>
-                </ul>
-            </nav>
+            <?php
+            include 'include/menu_admin.php';
+            ?>
         </div>
     </header>
     <div class="container">
@@ -87,7 +66,7 @@
                 </p>-->
                 <p>
                     <label>Telefonska številka:</label>
-                    <input type = "text" placeholder = "###-###-###" name="tel" id="tel"/> <span id="tel_error" class="error-report"></span>
+                    <input type = "text" placeholder = "### ###-###" name="tel" id="tel"/> <span id="tel_error" class="error-report"></span>
                 </p>
                 <p>
                     <label for = "closed">Težava odpravljena</label>
@@ -104,11 +83,9 @@
             </form>
         </section>
         <!-- footer -->
-        <footer>
-            Vse pravice pridržane (c) 2013 <a href="http://www.divjak.si">divjak.si</a> <a class="pull-right" href="../user/index.html"><i class="fa fa-wheelchair"></i> Uporabnik</a>
-            <script src="../../js/sp.js" type="text/javascript"></script>
-            <script src="../../js/admin_validation.js" type="text/javascript"></script>
-        </footer>
+        <?php
+        include 'include/footer.php';
+        ?>
     </div> <!--! end of #container -->
 </body>
 </html>

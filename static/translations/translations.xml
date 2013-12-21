@@ -4,7 +4,7 @@
     <!-- Translations for SP Technical support website -->
 
     <!--Index page-->
-    <page id="index">
+    <page id="">
         <translation id="title">
             <english>Technical support website</english>
             <slovenian>Spletna stran za tehnično pomoč</slovenian>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <!--Javascript files -->
     <script type="application/javascript" encoding="utf-8" src="<?php echo STATIC_URL; ?>js/jquery/js/jquery-1.9.1.js"></script>
     <script type="application/javascript" src="<?php echo STATIC_URL; ?>js/jquery/js/jquery-ui-1.10.3.custom.js"></script>

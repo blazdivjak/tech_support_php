@@ -2,14 +2,14 @@
 <html>
 <!--Header Include -->
 <?php
-include 'include/header.html';
+include 'include/header.php';
 ?>
     <body>
         <header>
             <div class="container">
                 <h1>Spletna stran za tehnično pomoč</h1>
                 <?php
-                include 'include/menu_user.html';
+                include 'include/menu_admin.php';
                 ?>
             </div>
         </header>
@@ -41,6 +41,43 @@ include 'include/header.html';
                     </tr>
                     </thead>
                     <tbody>
+                    <?php foreach($this->tickets as $row){
+                        //echo $row['userid'];
+                        ?><tr>
+                        <td><?php echo $row['ticketid'];?></td>
+                        <td><?php echo $row['problem'];?></td>
+                        <td><?php echo $row['date'];?></td>
+                        <td><?php echo $row['type'];?></td>
+                        <td><?php echo $this->admin_info[$row['adminid']];?></td>
+                        <td>
+                        <?php
+                        if($row['state']=='1'){
+                            echo "Čaka na odziv agenta";
+                        }elseif($row['state']=='2'){
+                            echo "V obdelavi";
+                        }elseif($row['state']=='3'){
+                            echo "Čaka na odziv uporabnika";
+                        }elseif($row['state']=='4'){
+                            echo "Zaključen";
+                        }else{
+                            echo "Neveljavno stanje";
+                        }
+                        //echo $row['state'];
+                        ?>
+                        </td>
+                        <!--<td><a href="<?php echo STATIC_URL; ?>zahtevki_admin/uredi/<?php echo $row['ticketid'];?>"><i class="fa fa-ambulance"></i></a> <a href="<?php echo STATIC_URL; ?>zahtevki_admin/izbrisi/<?php echo $row['ticketid'];?>"><i class="fa fa-trash-o"></i></a></td>-->
+                        <td>
+                            <a href="<?php echo STATIC_URL; ?>zahtevki_admin/uredi/<?php echo $row['ticketid'];?>"><i class="
+                            <?php if($row['adminid']==''){
+                                    echo 'fa fa-ambulance';
+                                }else{
+                                    echo 'fa fa-eye';
+                                }
+                                ?>
+                                "></i></a> <a href="<?php echo STATIC_URL; ?>zahtevki_admin/izbrisi/<?php echo $row['ticketid'];?>"><i class="fa fa-trash-o"></i></a></td>
+                        </tr>
+                    <?php }?>
+                    <!--
                         <tr>
                             <td>1</td>
                             <td>Problem z apache strežnikom</td>
@@ -76,7 +113,7 @@ include 'include/header.html';
                             <td>Alberto Komputador</td>
                             <td>Zaključeno</td>
                             <td><a href="podrobnosti_zahtevka.html"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
-                        </tr>
+                        </tr>-->
                     </tbody>
                     <tfoot>
                         <tr>
@@ -87,7 +124,7 @@ include 'include/header.html';
             </section>
             <!-- footer -->
             <?php
-            include 'include/footer.html';
+            include 'include/footer.php';
             ?>
         </div> <!--! end of #container -->
     </body>

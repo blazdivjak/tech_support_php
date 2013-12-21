@@ -51,8 +51,23 @@ include 'include/header.php';
                             <td><?php echo $row['problem'];?></td>
                             <td><?php echo $row['date'];?></td>
                             <td><?php echo $row['type'];?></td>
-                            <td><?php echo $row['agent'];?></td>
-                            <td><?php echo $row['state'];?></td>
+                            <td><?php echo $this->admin_info[$row['adminid']];?></td>
+                            <td>
+                                <?php
+                                if($row['state']=='1'){
+                                    echo "Čaka na odziv agenta";
+                                }elseif($row['state']=='2'){
+                                    echo "V obdelavi";
+                                }elseif($row['state']=='3'){
+                                    echo "Čaka na vaš odziv";
+                                }elseif($row['state']=='4'){
+                                    echo "Zaključen";
+                                }else{
+                                    echo "Neveljavno stanje";
+                                }
+                                //echo $row['state'];
+                                ?>
+                            </td>
                             <td><a href="<?php echo STATIC_URL; ?>zahtevki/uredi/<?php echo $row['ticketid'];?>"><i class="fa fa-pencil-square-o"></i></a> <a href="<?php echo STATIC_URL; ?>zahtevki/izbrisi/<?php echo $row['ticketid'];?>"><i class="fa fa-trash-o"></i></a></td>
                         </tr>
                     <?php }?>
@@ -95,7 +110,7 @@ include 'include/header.php';
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="7" rowspan="1"><a href="prijava_tezave.html">Dodaj zahtevek</a></td>
+                            <td colspan="7" rowspan="1"><a href="<?php echo STATIC_URL; ?>prijava_tezave">Dodaj zahtevek</a></td>
                         </tr>
                     </tfoot>
                 </table>

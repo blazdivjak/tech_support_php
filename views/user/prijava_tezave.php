@@ -63,7 +63,7 @@ include 'include/header.php';
                     </p>-->
                     <p>
                         <label>Telefonska številka:</label>
-                        <input type = "text" placeholder = "###-###-###" name="tel" id="tel"/> <span id="tel_error" class="error-report"></span>
+                        <input type = "text" placeholder = "### ###-###" name="tel" id="tel"/> <span id="tel_error" class="error-report"></span>
                     </p>
                     <p>
                         <button class="btn" id="submit" name="submit" type ="submit">Potrdi</button>

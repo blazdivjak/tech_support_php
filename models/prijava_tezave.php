@@ -11,7 +11,7 @@ class Prijava_Tezave_Model extends Model {
         parent::__construct();
         echo "Model za dodajanje zahtevkov";
     }
-    function dodaj($kratek_opis, $datum, $podrocje, $opis, $tel, $userid, $level=2, $state="Čaka na odziv agenta"){
+    function dodaj($kratek_opis, $datum, $podrocje, $opis, $tel, $userid, $level=2, $state="1"){
 
         $datum = date('Y-m-d', strtotime($datum));
         //echo $datum;

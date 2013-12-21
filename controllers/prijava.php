@@ -9,7 +9,7 @@
 class Prijava extends Controller{
     function __construct(){
         parent::__construct();
-        echo "Smo na strani za prijavo<br/>";
+        //echo "Smo na strani za prijavo<br/>";
     }
 
     function index(){
@@ -21,8 +21,10 @@ class Prijava extends Controller{
             Session::destroy();
             $this->view->msg = "Nismo še prijavljeni, zato bo potrebna prijava.";
             $this->view->render('login/prijava');
+        }elseif(Session::get('level')==1){
+            header('location:zahtevki');
         }else{
-            header('location:home');
+            header('location:zahtevki_admin');
         }
     }
     public function prijavime($arg=false){
@@ -60,7 +62,7 @@ class Prijava extends Controller{
                 header($redirect);
                 exit();
 
-            }elseif($privilegelvl==2){
+            }else{
                 $redirect = sprintf("location: %szahtevki_admin",STATIC_URL);
                 header($redirect);
                 exit();

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- footer -->
 <footer id="footer">
-    Vse pravice pridržane (c) 2013 <a href="http://www.divjak.si">divjak.si</a> <a class="pull-right" href="admin/zahtevki.html"><i class="fa fa-user-md"></i> Študent/Strokovnjak</a>
+    Vse pravice pridržane (c) 2013 <a href="http://www.divjak.si">divjak.si</a> <!--<a class="pull-right" href="admin/zahtevki.html"><i class="fa fa-user-md"></i> Študent/Strokovnjak</a>-->
     <br/>
     <!--Lang Change -->
     <div id="lang_change">

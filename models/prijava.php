@@ -9,7 +9,7 @@
 class Prijava_Model extends Model {
     function __construct(){
         parent::__construct();
-        echo "Model za prijavo v aplikacijo";
+        //echo "Model za prijavo v aplikacijo";
     }
     function preveriUporabnika($username, $password){
 

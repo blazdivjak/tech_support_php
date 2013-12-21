@@ -1,36 +1,16 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <!-- Keywords -->
-
-        <!--Javascript files -->
-        <script src="../../js/jquery/js/jquery-1.9.1.js"></script>
-        <script src="../../js/jquery/js/jquery-ui-1.10.3.custom.js"></script>
-
-        <!--Website CSS File -->
-        <link rel="stylesheet" type="text/css" href="../../static/style.css">
-
-        <!-- JQuery CSS Files -->
-        <link rel="stylesheet" type="text/css" href="../../js/jquery/css/ui-lightness/jquery-ui-1.10.3.custom.css">
-
-        <!--Cool Icons-->
-        <link rel="stylesheet" href="../../static/icons/css/font-awesome.css">
-
-        <title>Spisek mojih zahtevkov za pomoč</title>
-    </head>
+<!--Header Include -->
+<?php
+include 'include/header.php';
+?>
     <body>
         <header>
             <div class="container">
                 <h1>Spletna stran za tehnično pomoč</h1>
-                <nav class="horizontal-menu">
-                    <ul>
-                        <!--<li><a href="index.html">Domov</a></li>-->
-                        <li><a href="prijava_tezave.html">Vnos težave klicatelja</a></li>
-                        <li><a href="zahtevki.html">Zahtevki za pomoč</a></li>
-                        <li><a class="pull-right" href="../login/prijava.html"><i class="fa fa-user fa-2x"></i> Alberto Komputador</a></li>
-                    </ul>
-                </nav>
+                <?php
+                include 'include/menu_user.php';
+                ?>
             </div>
         </header>
         <div class="container">
@@ -60,8 +40,34 @@
                         <th scope="col">Akcije</th>
                     </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody id="table_body">
+                    <?php foreach($this->tickets as $row){
+                        ?><tr>
+                        <td><?php echo $row['ticketid'];?></td>
+                        <td><?php echo $row['problem'];?></td>
+                        <td><?php echo $row['date'];?></td>
+                        <td><?php echo $row['type'];?></td>
+                        <td><?php echo $this->admin_info[$row['adminid']];?></td>
+                        <td>
+                            <?php
+                            if($row['state']=='1'){
+                                echo "Čaka na odziv agenta";
+                            }elseif($row['state']=='2'){
+                                echo "V obdelavi";
+                            }elseif($row['state']=='3'){
+                                echo "Čaka na vaš odziv";
+                            }elseif($row['state']=='4'){
+                                echo "Zaključen";
+                            }else{
+                                echo "Neveljavno stanje";
+                            }
+                            //echo $row['state'];
+                            ?>
+                        </td>
+                        <td><a href="<?php echo STATIC_URL; ?>zahtevki/uredi/<?php echo $row['ticketid'];?>"><i class="fa fa-pencil-square-o"></i></a> <a href="<?php echo STATIC_URL; ?>zahtevki/izbrisi/<?php echo $row['ticketid'];?>"><i class="fa fa-trash-o"></i></a></td>
+                        </tr>
+                    <?php }?>
+                        <!--<tr>
                             <td>1</td>
                             <td>Problem z apache strežnikom</td>
                             <td>26/10/2013</td>
@@ -77,7 +83,7 @@
                             <td>Internetna povezava</td>
                             <td>Rolando Wirelez</td>
                             <td>V obdelavi</td>
-                            <td><a href="podrobnosti_zahtevka.html"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
+                            <td><a href="podrobnosti_zahtevka.php"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
                         </tr>
                         <tr>
                             <td>3</td>
@@ -85,8 +91,8 @@
                             <td>10/10/2013</td>
                             <td>Varnostni incident</td>
                             <td>Matjaž Pančur</td>
-                            <td>Čaka na odziv uporabnika</td>
-                            <td><a href="podrobnosti_zahtevka.html"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
+                            <td>Čaka na vaš odziv</td>
+                            <td><a href="podrobnosti_zahtevka.php"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
                         </tr>
                         <tr>
                             <td>4</td>
@@ -95,12 +101,12 @@
                             <td>Drugo</td>
                             <td>Alberto Komputador</td>
                             <td>Zaključeno</td>
-                            <td><a href="podrobnosti_zahtevka.html"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
-                        </tr>
+                            <td><a href="podrobnosti_zahtevka.php"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
+                        </tr>-->
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="7" rowspan="1"><a href="prijava_tezave.html">Vnos težave klicatelja</a></td>
+                            <td colspan="7" rowspan="1"><a href="<?php echo STATIC_URL; ?>prijava_tezave">Dodaj zahtevek</a></td>
                         </tr>
                     </tfoot>
                 </table>
@@ -110,37 +116,82 @@
             <section class="ticket-details">
                 <h3>Podrobnosti zahtevka</h3>
                 <p>
-                    ID:
+                    <strong>ID:</strong> <?php echo $this->edit_ticket[0]['ticketid'];?>
                 </p>
                 <p>
-                    Težava:
+                    <strong>Težava:</strong> <?php echo $this->edit_ticket[0]['problem'];?>
                 </p>
                 <p>
-                    Datum:
+                    <strong>Datum:</strong> <?php echo $this->edit_ticket[0]['date'];?>
                 </p>
                 <p>
-                    Področje težave:
+                    <strong>Področje težave:</strong> <?php echo $this->edit_ticket[0]['type'];?>
                 </p>
                 <p>
-                    Opis težave:
+                    <strong>Opis težave:</strong> <?php echo $this->edit_ticket[0]['description'];?>
                 </p>
                 <p>
-                    Status:
+                    <strong>Status:</strong>
+                    <?php
+                    if($this->edit_ticket[0]['state']=='1'){
+                        echo "Čaka na odziv agenta";
+                    }elseif($this->edit_ticket[0]['state']=='2'){
+                        echo "V obdelavi";
+                    }elseif($this->edit_ticket[0]['state']=='3'){
+                        echo "Čaka na vaš odziv";
+                    }elseif($this->edit_ticket[0]['state']=='4'){
+                        echo "Zaključen";
+                    }else{
+                        echo "Neveljavno stanje";
+                    }
+                    ?>
                 </p>
-                <h3>Kontaktni podatki uporabnika</h3>
-                <p>
-                    Uporabniško ime:
-                </p>
-                <p>
-                    Mail:
-                </p>
-                <p>
-                    Telefon:
-                </p>
-                <button class="btn large">Prevzemi primer</button> <button class="btn large">Eskaliraj</button>
 
+                <!-- Different buttons based on ticket state -->
+                <form method="post" action="<?php echo STATIC_URL; ?>zahtevki/posodobi/<?php  echo $this->edit_ticket[0]['ticketid'];?>">
+
+                <?php
+                    if($this->edit_ticket[0]['state']=="4"){
+                        echo "<input type='hidden' name='state' value='1'>";
+                        echo "<button class='btn large'>Ponovno odpri primer</button>";
+                    }else{
+                        echo "<input type='hidden' name='state' value='4'>";
+                        echo "<button class='btn large'>Potrdi rešitev primera</button>";
+                    }?>
+                </form>
                 <!--Odzivi -->
                 <h3>Odziv agenta</h3>
+
+                <?php foreach($this->messages as $message){
+
+                    if($message['privilegelvl']=="1"){
+                        echo "<div class='chat client pull-right'>";
+                        echo  "<p>";
+                        echo  "<b>";
+                        echo $message['date']," ",  $message['user'];
+                        echo "</b>";
+                        echo  "</p>";
+                        echo  "<p>";
+                        echo $message['content'];
+                        echo  "</p>";
+                        echo "</div>";
+                        echo "<div class='clear'></div>";
+                    }else{
+                        echo "<div class='chat agent pull-left'>";
+                        echo  "<p>";
+                        echo  "<b>";
+                        echo $message['date']," ",  $message['user'];
+                        echo "</b>";
+                        echo  "</p>";
+                        echo  "<p>";
+                        echo $message['content'];
+                        echo  "</p>";
+                        echo "</div>";
+                        echo "<div class='clear'></div>";
+                    }
+                }
+                ?>
+                <!--
                 <div class="chat agent pull-left">
                     <p>
                         <b>10.10.2013 10:15 Matjaž Pančur</b>
@@ -195,12 +246,13 @@
                         Vse smo posodobili. Sedaj spet vse deluje. Z moje strani lahko primer zapremo.
                     </p>
                 </div>
-                <div class="clear"></div>
+                <div class="clear"></div>-->
                 <div class="nov-odgovor">
-                    <form method="post" action="#">
+                    <form method="post" action="<?php echo STATIC_URL; ?>zahtevki/poslji/<?php  echo $this->edit_ticket[0]['ticketid'];?>">
                         <p>
                             <label>Novo sporočilo:</label>
-                            <textarea name="message" id="message" required placeholder="Sporočilo za tehnično pomoč"></textarea>
+                            <div class="clear"></div>
+                            <textarea title="Vnesite sporočilo za naše strokovnjake. Odzvali se vam bodo najkasneje v 24urah." name="message" id="message" required placeholder="Sporočilo za tehnično pomoč"></textarea>
                             <br/><span id="message_error" class="error-report"></span>
                         </p>
                         <p>
@@ -211,11 +263,9 @@
                 <div class="clear"></div>
             </section>
             <!-- footer -->
-            <footer>
-                Vse pravice pridržane (c) 2013 <a href="http://www.divjak.si">divjak.si</a> <a class="pull-right" href="../user/index.html"><i class="fa fa-wheelchair"></i> Uporabnik</a>
-                <script src="../../js/chat_validation.js" type="text/javascript"></script>
-                <script src="../../js/sp.js" type="text/javascript"></script>
-            </footer>
+            <?php
+            include 'include/footer.php';
+            ?>
         </div> <!--! end of #container -->
     </body>
 </html>

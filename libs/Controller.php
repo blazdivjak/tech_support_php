@@ -29,7 +29,7 @@ class Controller {
             $this->model = new $modelName();
             echo "Loading model $modelName";
         }else{
-            echo "Model does not exist</br>";
+            //echo "Model does not exist</br>";
         }
     }
 

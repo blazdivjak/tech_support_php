@@ -6,12 +6,13 @@
  * Time: 20:12
  */
 
-class Zahtevki extends Controller{
+class Zahtevki_Admin extends Controller{
     function __construct(){
         parent::__construct();
-        //echo "Smo na strani z zahtevki<br/>";
+        //echo "Smo na adminstratorski strani za zahtevke<br/>";
     }
     function index(){
+
         //Check if user is logged in
         Session::init();
         $logedin=Session::get("username");
@@ -26,7 +27,12 @@ class Zahtevki extends Controller{
             $privilegelvl=Session::get("level");
 
             if($privilegelvl==1){
-                $this->view->tickets=$model->prikazi($userid);
+                $redirect = sprintf("location: %szahtevki",STATIC_URL);
+                header($redirect);
+                exit();
+            }
+            else{
+                $this->view->tickets=$model->prikazi_vse($privilegelvl);
 
                 //admin info
                 foreach($this->view->tickets as $row){
@@ -36,13 +42,7 @@ class Zahtevki extends Controller{
                 }
 
             }
-            else{
-                $redirect = sprintf("location: %szahtevki_admin",STATIC_URL);
-                header($redirect);
-                exit();
-            }
-
-            $this->view->render('user/zahtevki');
+            $this->view->render('admin/zahtevki');
         }
     }
 
@@ -50,6 +50,7 @@ class Zahtevki extends Controller{
         //Check if user is logged in
         Session::init();
         $logedin=Session::get("username");
+        $privilegelvl=Session::get("level");
         if($logedin==False){
             Session::destroy();
             $redirect = sprintf("location: %sprijava",STATIC_URL);
@@ -62,9 +63,9 @@ class Zahtevki extends Controller{
             $userid=Session::get("userid");
 
             echo "Brišem...</br>";
-            $this->view->result=$model->izbrisi($userid,$arg);
+            $this->view->result=$model->izbrisi($userid,$arg, $privilegelvl);
 //            echo $this->view->result;
-            $redirect = sprintf("location: %szahtevki",STATIC_URL);
+            $redirect = sprintf("location: %szahtevki_admin",STATIC_URL);
             header($redirect);
             exit();
         }
@@ -83,18 +84,33 @@ class Zahtevki extends Controller{
             require 'models/zahtevki.php';
             $model = new Zahtevki_Model();
             $userid=Session::get("userid");
-            $this->view->tickets=$model->prikazi($userid);
+            $privilegelvl=Session::get("level");
+
+            //all tickets
+            $this->view->tickets=$model->prikazi_vse($privilegelvl);
+
+            //ticket info
+            $this->view->edit_ticket=$model->prikazi_admin($arg);
+
+            //user info
+            $this->view->user_info=$model->uporabnik($this->view->edit_ticket[0]['userid']);
+
 
             //admin info
+            $this->view->adminid=$userid;
+
             foreach($this->view->tickets as $row){
                 //echo $row['adminid'];
                 $admin_info=$model->uporabnik($row['adminid']);
                 $this->view->admin_info[$row['adminid']]=$admin_info[0]['name'];
             }
+            //print_r($this->view->admin_info);
+            //echo $this->view->admin_info[5];
+            //exit();
 
-            $this->view->edit_ticket=$model->prikazi($userid, $arg);
+
             $this->view->messages=$model->prikazi_sporocila($arg);
-            $this->view->render('user/podrobnosti_zahtevka');
+            $this->view->render('admin/podrobnosti_zahtevka');
             //$redirect = sprintf("location: %szahtevki",STATIC_URL);
             //header($redirect);
             exit();
@@ -114,6 +130,8 @@ class Zahtevki extends Controller{
 
             //get POST variable
             $state = $_POST['state'];
+            $own =  $_POST['owner'];
+            $escalate =  $_POST['escalate'];
 
             if($state!=""){
                 echo $state, $arg;
@@ -121,14 +139,32 @@ class Zahtevki extends Controller{
                 require 'models/zahtevki.php';
                 $model = new Zahtevki_Model();
                 $userid=Session::get("userid");
+
+                //change ticket state
                 $this->view->tickets=$model->spremeni_stanje($arg, $state);
+
+                //own this ticket
+                if($own!=""){
+                    $this->view->tickets=$model->own($arg, $userid);
+                }
+
                 echo "Zakljucujem ticket...</br>";
                 //$this->view->render('user/podrobnosti_zahtevka');
-                $redirect = sprintf("location: %szahtevki/uredi/$arg",STATIC_URL);
+                $redirect = sprintf("location: %szahtevki_admin/uredi/$arg",STATIC_URL);
                 header($redirect);
                 exit();
-            }else{
-                $redirect = sprintf("location: %szahtevki",STATIC_URL);
+            }elseif($escalate!=''){
+
+                require 'models/zahtevki.php';
+                $model = new Zahtevki_Model();
+                $this->view->tickets=$model->escalate($arg, $escalate);
+
+                $redirect = sprintf("location: %szahtevki_admin",STATIC_URL);
+                header($redirect);
+                exit();
+            }
+            else{
+                $redirect = sprintf("location: %szahtevki_admin",STATIC_URL);
                 header($redirect);
                 exit();
             }
@@ -152,7 +188,6 @@ class Zahtevki extends Controller{
             //TODO: Validate message
 
             if($message!=""){
-                echo $message, $arg;
 
                 //get sending user
                 $userid=Session::get("userid");
@@ -173,21 +208,21 @@ class Zahtevki extends Controller{
                 $this->view->sql_report=$model->dodaj_sporocilo($arg, $date, $privilegelvl, $message, $name);
 
                 //change ticket state
-                if($privilegelvl="1"){
-                    $state = "1";
+                if($privilegelvl=="1"){
+                    $state = "Čaka na odziv agenta";
                     $this->view->tickets=$model->spremeni_stanje($arg, $state);
                 }else {
-                    $state = "1";
+                    $state = "3";
                     $this->view->tickets=$model->spremeni_stanje($arg, $state);
                 }
 
                 //redirect back to view
-                $redirect = sprintf("location: %szahtevki/uredi/$arg",STATIC_URL);
+                $redirect = sprintf("location: %szahtevki_admin/uredi/$arg",STATIC_URL);
                 header($redirect);
                 exit();
 
             }else{
-                $redirect = sprintf("location: %szahtevki",STATIC_URL);
+                $redirect = sprintf("location: %szahtevki_admin",STATIC_URL);
                 header($redirect);
                 exit();
             }
