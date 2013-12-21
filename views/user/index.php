@@ -1,33 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <!-- Keywords -->
-
-    <!--Javascript files -->
-    <script src="js/jquery/js/jquery-1.9.1.js"></script>
-    <script src="js/jquery/js/jquery-ui-1.10.3.custom.js"></script>
-
-    <!--Website CSS File -->
-    <link rel="stylesheet" type="text/css" href="static/style.css">
-
-    <!--Cool Icons-->
-    <link rel="stylesheet" href="static/icons/css/font-awesome.css">
-
-    <title id="title">Spletna stran za tehnično pomoč</title>
-</head>
+<!--Header Include -->
+<?php
+include 'include/header.php';
+?>
 <body>
     <header>
         <div class="container">
             <h1 id="page_header">Spletna stran za tehnično pomoč</h1>
-            <nav class="horizontal-menu">
-                <ul>
-                    <li><a id="home" href="index.html">Domov</a></li>
-                    <li><a id="problem_report" href="prijava_tezave.html">Prijava težave</a></li>
-                    <li><a id="tickets" href="zahtevki.html">Moji zahtevki</a></li>
-                    <li><a class="pull-right" href="prijava.html"><i class="fa fa-user fa-2x"></i><span id="login"> Prijava</span></a></li>
-                </ul>
-            </nav>
+            <?php
+            include 'include/menu_user.php';
+            ?>
         </div>
     </header>
     <div class="container">
@@ -68,15 +51,9 @@
         </section>
 
         <!-- footer -->
-        <footer id="footer">
-            Vse pravice pridržane (c) 2013 <a href="http://www.divjak.si">divjak.si</a> <a class="pull-right" href="admin/zahtevki.html"><i class="fa fa-user-md"></i> Študent/Strokovnjak</a>
-            <br/>
-            <!--Lang Change -->
-            <div id="lang_change">
-                <a href="" id="english">Angleščina</a> | <a href="" id="slovenian">Slovenščina</a>
-            </div>
-            <script src="js/change_language.js" type="text/javascript"></script>
-        </footer>
+        <?php
+            include 'include/footer.php';
+        ?>
     </div> <!--! end of #container -->
 </body>
 </html>

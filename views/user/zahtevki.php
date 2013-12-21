@@ -1,48 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <!-- Keywords -->
-
-        <!--Javascript files -->
-        <script src="../js/jquery/js/jquery-1.9.1.js"></script>
-        <script src="../js/jquery/js/jquery-ui-1.10.3.custom.js"></script>
-
-        <!--Website CSS File -->
-        <link rel="stylesheet" type="text/css" href="../static/style.css">
-
-        <!-- JQuery CSS Files -->
-        <link rel="stylesheet" type="text/css" href="../js/jquery/css/ui-lightness/jquery-ui-1.10.3.custom.css">
-
-        <!--Cool Icons-->
-        <link rel="stylesheet" href="../static/icons/css/font-awesome.css">
-
-        <title>Spisek mojih zahtevkov za pomoč</title>
+<!--Header Include -->
+<?php
+include 'include/header.php';
+?>
     </head>
     <body>
         <header>
             <div class="container">
                 <h1>Spletna stran za tehnično pomoč</h1>
-                <nav class="horizontal-menu">
-                    <ul>
-                        <!--<li><a href="index.html">Domov</a></li>-->
-                        <li><a href="prijava_tezave.html">Vnos težave klicatelja</a></li>
-                        <li><a href="zahtevki.html">Zahtevki za pomoč</a></li>
-                        <li><a class="pull-right" href="../prijava.html"><i class="fa fa-user fa-2x"></i> Alberto Komputador</a></li>
-                    </ul>
-                </nav>
+                <?php
+                include 'include/menu_user.php';
+                ?>
             </div>
         </header>
         <div class="container">
             <section class="main">
                 <h3>Zahtevki za pomoč</h3>
+                <?php echo $this->msg; ?>
                 <p>
                     Spisek vaših zahtevkov za pomoč, ki so že bili rešeni, ali pa še čakajo na obdelavo.
                 </p>
                 <div id="searchbox" class="search">
                     <form action="zahtevki.html">
                         <p>
-                            <label>Išči:</label>
+                            <label id="search_label">Išči:</label>
                             <input type = "text" id="search" name="search" placeholder = "Iskalni parameter" />
                             <button class="btn" type ="submit">Potrdi</button>
                         </p>
@@ -52,23 +35,35 @@
                     <thead>
                     <tr>
                         <th scope="col">ID</th>
-                        <th scope="col">Težava</th>
-                        <th scope="col">Datum</th>
-                        <th scope="col">Področje</th>
-                        <th scope="col">Agent</th>
-                        <th scope="col">Status</th>
-                        <th scope="col">Akcije</th>
+                        <th id="problem"scope="col">Težava</th>
+                        <th id="date" scope="col">Datum</th>
+                        <th id="field" scope="col">Področje</th>
+                        <th id="agent" scope="col">Agent</th>
+                        <th id="status" scope="col">Status</th>
+                        <th id="action" scope="col">Akcije</th>
                     </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                    <?php foreach($this->tickets as $row){
+                    //echo $row['userid'];
+                        ?><tr>
+                            <td><?php echo $row['ticketid'];?></td>
+                            <td><?php echo $row['problem'];?></td>
+                            <td><?php echo $row['date'];?></td>
+                            <td><?php echo $row['type'];?></td>
+                            <td><?php echo $row['agent'];?></td>
+                            <td><?php echo $row['state'];?></td>
+                            <td><a href="<?php echo STATIC_URL; ?>zahtevki/uredi/<?php echo $row['ticketid'];?>"><i class="fa fa-pencil-square-o"></i></a> <a href="<?php echo STATIC_URL; ?>zahtevki/izbrisi/<?php echo $row['ticketid'];?>"><i class="fa fa-trash-o"></i></a></td>
+                        </tr>
+                    <?php }?>
+                        <!--<tr>
                             <td>1</td>
                             <td>Problem z apache strežnikom</td>
                             <td>26/10/2013</td>
                             <td>Virtualni strežniki</td>
                             <td>/</td>
                             <td>Čaka na odziv agenta</td>
-                            <td><a href="podrobnosti_zahtevka.html"><i class="fa fa-ambulance"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
+                            <td><a href="podrobnosti_zahtevka.html"><i class="fa fa-pencil-square-o"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
                         </tr>
                         <tr>
                             <td>2</td>
@@ -85,7 +80,7 @@
                             <td>10/10/2013</td>
                             <td>Varnostni incident</td>
                             <td>Matjaž Pančur</td>
-                            <td>Čaka na odziv uporabnika</td>
+                            <td>Čaka na vaš odziv</td>
                             <td><a href="podrobnosti_zahtevka.html"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
                         </tr>
                         <tr>
@@ -96,20 +91,19 @@
                             <td>Alberto Komputador</td>
                             <td>Zaključeno</td>
                             <td><a href="podrobnosti_zahtevka.html"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
-                        </tr>
+                        </tr>-->
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="7" rowspan="1"><a href="prijava_tezave.html">Vnos težave klicatelja</a></td>
+                            <td colspan="7" rowspan="1"><a href="prijava_tezave.html">Dodaj zahtevek</a></td>
                         </tr>
                     </tfoot>
                 </table>
             </section>
             <!-- footer -->
-            <footer>
-                Vse pravice pridržane (c) 2013 <a href="http://www.divjak.si">divjak.si</a> <a class="pull-right" href="../index.html"><i class="fa fa-wheelchair"></i> Uporabnik</a>
-                <script src="../js/sp.js" type="text/javascript"></script>
-            </footer>
+            <?php
+            include 'include/footer.php';
+            ?>
         </div> <!--! end of #container -->
     </body>
 </html>

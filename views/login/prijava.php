@@ -1,44 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <!-- Keywords -->
-
-    <!--Javascript files -->
-    <script src="js/jquery/js/jquery-1.9.1.js"></script>
-    <script src="js/jquery/js/jquery-ui-1.10.3.custom.js"></script>
-
-    <!--Website CSS File -->
-    <link rel="stylesheet" type="text/css" href="static/style.css">
-
-    <!--Cool Icons-->
-    <link rel="stylesheet" href="static/icons/css/font-awesome.css">
-
-    <title id="title">Prijava v spletno aplikacijo za pomoč</title>
-</head>
+<!--Header Include -->
+<?php
+include 'include/header.php';
+?>
 <body>
-<!--
-    <header>
-        <div class="container">
-            <h1>Spletna stran za tehnično pomoč</h1>
-            <nav class="horizontal-menu">
-                <ul>
-                    <li><a href="index.html">Domov</a></li>
-                    <li><a href="prijava_tezave.html">Prijava težave</a></li>
-                    <li><a href="zahtevki.html">Moji zahtevki</a></li>
-                    <li><a class="pull-right" href="prijava.html"><i class="fa fa-user fa-2x"></i> Janez Novak</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-        -->
         <section class="login">
             <div class="container-login">
                 <h3 id="header">Prijava</h3>
+
+                <!--Display error message -->
+                <?php
+                    echo $this->msg;
+                ?>
+
                 <p id="login_text">
                     Vnesite uporabniško ime in geslo
                 </p>
-                <form method="post" action="index.html">
+                <form method="post" action="<?php echo STATIC_URL; ?>prijava/prijavime">
                     <p>
                         <label id="username_text">Uporabniško ime:</label>
                         <input type="text" maxlength="50" required autofocus name="username" id="username" placeholder="Uporabniško ime"/>
@@ -46,7 +25,7 @@
                     </p>
                     <p>
                         <label id="password_text">Geslo:</label>
-                        <input type="password" id="password" name="opis" required placeholder="Geslo"/>
+                        <input type="password" id="password" name="password" name="opis" required placeholder="Geslo"/>
                         <br/><span id="password_error" class="error-report"></span>
                     </p>
                     <p>
@@ -63,9 +42,9 @@
            <div id="lang_change">
                <a href="" id="english">Angleščina</a> | <a href="" id="slovenian">Slovenščina</a>
            </div>
-           <script src="js/change_language.js" type="text/javascript"></script>
+           <script src="js/change_language.js" type="application/javascript"></script>
            <!--Website Javscript files -->
-           <script src="js/login_validation.js" type="text/javascript"></script>
+           <script src="js/login_validation.js" type="application/javascript"></script>
        </footer>
     </div> <!--! end of #container -->
 </body>
