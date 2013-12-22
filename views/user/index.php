@@ -19,15 +19,15 @@ include 'include/header.php';
                 <div class="prijava-tezave col-2">
                     <div id="problem" class="title">Imate težave pri uporabi naših storitev?</div>
                     <p>
-                        <a href="prijava_tezave.html"><i class="fa fa-user-md fa-5x"></i></a>
-                        <a id="prijava_tezave" href="prijava_tezave.html">Prijavi težavo našim strokovnjakom</a>
+                        <a href="<?php echo STATIC_URL; ?>prijava_tezave"><i class="fa fa-user-md fa-5x"></i></a>
+                        <a id="prijava_tezave" href="<?php echo STATIC_URL; ?>prijava_tezave">Prijavi težavo našim strokovnjakom</a>
                     </p>
                 </div>
                 <div class="zahtevki col-2">
                     <div id="view_tickets" class="title">Pregled mojih zahtevkov</div>
                     <p>
-                        <a href="zahtevki.html"><i class="fa fa-h-square fa-5x animate"></i></a>
-                        <a id="moji_zahtevki" href="zahtevki.html">Moji zahtevki</a>
+                        <a href="<?php echo STATIC_URL; ?>zahtevki"><i class="fa fa-h-square fa-5x animate"></i></a>
+                        <a id="moji_zahtevki" href="<?php echo STATIC_URL; ?>zahtevki">Moji zahtevki</a>
                     </p>
                 </div>
             </div>
@@ -42,7 +42,7 @@ include 'include/header.php';
                 <h3>Recept za rešitev iz zagate:</h3>
 
                 <ol class="orange">
-                    <li>Prijavite težavo. To lahko storite preko <a href="prijava_tezave.html">spletnega obrazca</a> ali preko telefona, na T: 031-772-079.</li>
+                    <li>Prijavite težavo. To lahko storite preko <a href="<?php echo STATIC_URL; ?>prijava_tezave">spletnega obrazca</a> ali preko telefona, na T: 031-772-079.</li>
                     <li>Ekspresna rešitev težave s strani naših študentov in strokovnjakov.</li>
                     <li>Potrditev odprave težave z vaše strani in zaključek primera.</li>
                 </ol>

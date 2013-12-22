@@ -29,6 +29,10 @@ include 'include/header.php';
                         <br/><span id="password_error" class="error-report"></span>
                     </p>
                     <p>
+                        <label for = "remember">Zapomni si me</label>
+                        <input type="checkbox" id="remember" name="remember" value="yes"/>
+                    </p>
+                    <p>
                         <button class="btn" type ="submit" id="submit">Prijava</button>
                     </p>
                 </form>

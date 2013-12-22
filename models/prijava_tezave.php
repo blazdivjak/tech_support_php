@@ -11,13 +11,18 @@ class Prijava_Tezave_Model extends Model {
         parent::__construct();
         echo "Model za dodajanje zahtevkov";
     }
-    function dodaj($kratek_opis, $datum, $podrocje, $opis, $tel, $userid, $level=2, $state="1"){
+    function dodaj($kratek_opis, $datum, $podrocje, $opis, $tel, $userid, $level=2, $state="1", $adminid="NONE"){
 
         $datum = date('Y-m-d', strtotime($datum));
         //echo $datum;
 
         //$query = $this->db->prepare("INSERT INTO ticket (type, userid) VALUES ('$podrocje','$userid')");
-        $query = $this->db->prepare("INSERT INTO ticket (problem, date, type, description, phone, level, userid, state) VALUES('$kratek_opis', '$datum', '$podrocje', '$opis', '$tel', '$level', '$userid', '$state')");
+        if($adminid!="NONE"){
+            $query = $this->db->prepare("INSERT INTO ticket (problem, date, type, description, phone, level, userid, state, adminid) VALUES('$kratek_opis', '$datum', '$podrocje', '$opis', '$tel', '$level', '$userid', '$state', '$adminid')");
+        }else{
+             $query = $this->db->prepare("INSERT INTO ticket (problem, date, type, description, phone, level, userid, state) VALUES('$kratek_opis', '$datum', '$podrocje', '$opis', '$tel', '$level', '$userid', '$state')");
+        }
+
 
         $sql_response=$query->execute();
         echo $sql_response;

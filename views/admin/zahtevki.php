@@ -117,7 +117,7 @@ include 'include/header.php';
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="7" rowspan="1"><a href="prijava_tezave.html">Vnos težave klicatelja</a></td>
+                            <td colspan="7" rowspan="1"><a href="<?php echo STATIC_URL; ?>prijava_tezave_admin">Vnos težave klicatelja</a></td>
                         </tr>
                     </tfoot>
                 </table>

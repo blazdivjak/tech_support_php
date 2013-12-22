@@ -7,4 +7,5 @@
  */
 
 define('URL', 'http://ubuntu/sp/');
-define('STATIC_URL', '/sp/');
+//define('STATIC_URL', '/sp/');
+define('STATIC_URL', '/');

@@ -24,13 +24,13 @@ $(function() {
 //type ahead with availiable users, replacment for HTML5 type ahead (bad support in IE, Safari)
 $(function() {
     var users = [
-        "blazdivjak",
-        "gregorcimerman",
-        "avgust",
-        "julij",
-        "alexm",
-        "domenz",
-        "rokpapez"
+        "janez",
+        "mirko",
+        "test",
+        "katja",
+        "zoki",
+        "domen",
+        "kaja"
     ];
     $( "#username" ).autocomplete({
         source: users

@@ -6,27 +6,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c458f24d-2c47-47ec-a812-57c915c4eeb5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/include/menu_admin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/prijava_tezave_admin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/zahtevki_admin.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/menu_admin.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/admin/podrobnosti_zahtevka.html" afterPath="$PROJECT_DIR$/views/admin/podrobnosti_zahtevka.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/admin/prijava_tezave.html" afterPath="$PROJECT_DIR$/views/admin/prijava_tezave.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/admin/zahtevki.html" afterPath="$PROJECT_DIR$/views/admin/zahtevki.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/user/podrobnosti_zahtevka.html" afterPath="$PROJECT_DIR$/views/user/podrobnosti_zahtevka.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Controller.php" afterPath="$PROJECT_DIR$/libs/Controller.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Validate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Database.php" afterPath="$PROJECT_DIR$/libs/Database.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/footer.php" afterPath="$PROJECT_DIR$/include/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/header.php" afterPath="$PROJECT_DIR$/include/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/user/index.php" afterPath="$PROJECT_DIR$/views/user/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/paths.php" afterPath="$PROJECT_DIR$/config/paths.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/podrobnosti_zahtevka.php" afterPath="$PROJECT_DIR$/views/admin/podrobnosti_zahtevka.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/prijava.php" afterPath="$PROJECT_DIR$/controllers/prijava.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/prijava.php" afterPath="$PROJECT_DIR$/models/prijava.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/login/prijava.php" afterPath="$PROJECT_DIR$/views/login/prijava.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/prijava_tezave.php" afterPath="$PROJECT_DIR$/controllers/prijava_tezave.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/prijava_tezave.php" afterPath="$PROJECT_DIR$/models/prijava_tezave.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/prijava_tezave.php" afterPath="$PROJECT_DIR$/views/admin/prijava_tezave.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/user/prijava_tezave.php" afterPath="$PROJECT_DIR$/views/user/prijava_tezave.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/prijava_tezave_admin.php" afterPath="$PROJECT_DIR$/controllers/prijava_tezave_admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/sp.js" afterPath="$PROJECT_DIR$/js/sp.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/translations/translations.xml" afterPath="$PROJECT_DIR$/static/translations/translations.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/zahtevki.php" afterPath="$PROJECT_DIR$/controllers/zahtevki.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/zahtevki.php" afterPath="$PROJECT_DIR$/models/zahtevki.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/user/zahtevki.php" afterPath="$PROJECT_DIR$/views/user/zahtevki.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/zahtevki.php" afterPath="$PROJECT_DIR$/views/admin/zahtevki.php" />
     </list>
     <ignored path="ProjektSpletnoProgramiranje.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,37 +47,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="sp.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/sp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="13" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1275">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zahtevki.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/zahtevki.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="172" column="53" selection-start="5531" selection-end="5536" vertical-scroll-proportion="-104.375" vertical-offset="0" max-vertical-offset="2955">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="zahtevki.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/zahtevki.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="10" selection-start="192" selection-end="192" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="1845">
+            <state line="54" column="80" selection-start="1623" selection-end="1623" vertical-scroll-proportion="-30.625" vertical-offset="0" max-vertical-offset="1980">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prijava.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/prijava.php">
+      <file leaf-file-name="Database.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/Database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="10" selection-start="191" selection-end="191" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="450">
+            <state line="11" column="49" selection-start="276" selection-end="276" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="240">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zahtevki_admin.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/zahtevki_admin.php">
+      <file leaf-file-name="paths.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/paths.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="41" selection-start="3063" selection-end="3063" vertical-scroll-proportion="-22.5" vertical-offset="870" max-vertical-offset="3480">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="podrobnosti_zahtevka.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/admin/podrobnosti_zahtevka.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="139" column="61" selection-start="6119" selection-end="6119" vertical-scroll-proportion="0.71304345" vertical-offset="1511" max-vertical-offset="3105">
+            <state line="10" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="0.13513513" vertical-offset="0" max-vertical-offset="555">
               <folding />
             </state>
           </provider>
@@ -103,30 +110,31 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/models/prijava_tezave.php" />
-        <option value="$PROJECT_DIR$/views/admin/zahtevki.php" />
-        <option value="$PROJECT_DIR$/controllers/zahtevki.php" />
-        <option value="$PROJECT_DIR$/views/user/podrobnosti_zahtevka.php" />
-        <option value="$PROJECT_DIR$/views/user/zahtevki.php" />
-        <option value="$PROJECT_DIR$/include/menu_admin.php" />
-        <option value="$PROJECT_DIR$/controllers/prijava_tezave_admin.php" />
-        <option value="$PROJECT_DIR$/include/footer.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/libs/Validate.php" />
         <option value="$PROJECT_DIR$/views/user/prijava_tezave.php" />
-        <option value="$PROJECT_DIR$/views/admin/prijava_tezave.php" />
-        <option value="$PROJECT_DIR$/include/header.php" />
-        <option value="$PROJECT_DIR$/controllers/prijava.php" />
+        <option value="$PROJECT_DIR$/views/user/index.php" />
+        <option value="$PROJECT_DIR$/include/footer.php" />
+        <option value="$PROJECT_DIR$/models/prijava_tezave.php" />
+        <option value="$PROJECT_DIR$/js/sp.js" />
         <option value="$PROJECT_DIR$/models/zahtevki.php" />
-        <option value="$PROJECT_DIR$/models/prijava.php" />
-        <option value="$PROJECT_DIR$/controllers/zahtevki_admin.php" />
+        <option value="$PROJECT_DIR$/controllers/prijava_tezave_admin.php" />
+        <option value="$PROJECT_DIR$/views/admin/prijava_tezave.php" />
+        <option value="$PROJECT_DIR$/controllers/prijava_tezave.php" />
+        <option value="$PROJECT_DIR$/static/translations/translations.xml" />
         <option value="$PROJECT_DIR$/views/admin/podrobnosti_zahtevka.php" />
+        <option value="$PROJECT_DIR$/views/admin/zahtevki.php" />
+        <option value="$PROJECT_DIR$/libs/Database.php" />
+        <option value="$PROJECT_DIR$/config/paths.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+    <option name="x" value="3" />
     <option name="y" value="22" />
-    <option name="width" value="1680" />
-    <option name="height" value="977" />
+    <option name="width" value="1280" />
+    <option name="height" value="727" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -370,10 +378,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/libs" />
       <recent name="$PROJECT_DIR$/controllers" />
       <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$/config" />
-      <recent name="$PROJECT_DIR$/libs" />
       <recent name="$PROJECT_DIR$/static/translations" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -446,10 +454,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="977" extended-state="6" />
+    <frame x="3" y="22" width="1280" height="727" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32788798" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32784185" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -459,8 +467,8 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249694" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18298654" sideWeight="0.67211205" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.6721582" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24230146" sideWeight="0.6721582" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -472,25 +480,27 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39909297" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32788798" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905483" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282887" sideWeight="0.49969825" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32788798" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905483" sideWeight="0.5003018" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249694" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20892857" sideWeight="0.670068" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39909297" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24230146" sideWeight="0.67211205" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39909297" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -505,114 +515,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/user/podrobnosti_zahtevka.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="24" selection-start="1961" selection-end="2018" vertical-scroll-proportion="0.41666666" vertical-offset="405" max-vertical-offset="4140">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/menu_admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="86" selection-start="221" selection-end="221" vertical-scroll-proportion="0.07453416" vertical-offset="0" max-vertical-offset="805">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/zahtevki.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="206" selection-end="296" vertical-scroll-proportion="-1.3863636" vertical-offset="1248" max-vertical-offset="2040">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="821" selection-end="821" vertical-scroll-proportion="0.35403726" vertical-offset="0" max-vertical-offset="805">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="189" selection-start="242" selection-end="242" vertical-scroll-proportion="0.056818184" vertical-offset="0" max-vertical-offset="792">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/user/prijava_tezave.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="64" selection-start="3372" selection-end="3372" vertical-scroll-proportion="0.6212121" vertical-offset="483" max-vertical-offset="1275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/prijava_tezave.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="60" selection-start="3324" selection-end="3324" vertical-scroll-proportion="1.2878788" vertical-offset="0" max-vertical-offset="1440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="805">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/prijava.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="10" selection-start="189" selection-end="189" vertical-scroll-proportion="0.111801244" vertical-offset="0" max-vertical-offset="1260">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/prijava_tezave.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/prijava_tezave_admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="59" selection-start="1456" selection-end="1456" vertical-scroll-proportion="0.8385093" vertical-offset="0" max-vertical-offset="915">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/zahtevki.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="13" selection-start="2879" selection-end="2879" vertical-scroll-proportion="1.6211181" vertical-offset="0" max-vertical-offset="2955">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/zahtevki.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="10" selection-start="192" selection-end="192" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="1845">
+        <state line="31" column="0" selection-start="694" selection-end="785" vertical-scroll-proportion="0.2972973" vertical-offset="225" max-vertical-offset="1995">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/prijava.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="10" selection-start="191" selection-end="191" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="450">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="579">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/zahtevki_admin.php">
+    <entry file="file://$PROJECT_DIR$/models/prijava_tezave.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="41" selection-start="3063" selection-end="3063" vertical-scroll-proportion="-22.5" vertical-offset="870" max-vertical-offset="3480">
+        <state line="20" column="131" selection-start="697" selection-end="697" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/prijava_tezave.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="113" selection-start="3779" selection-end="3779" vertical-scroll-proportion="0.55350554" vertical-offset="720" max-vertical-offset="1440">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/user/prijava_tezave.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="116" selection-start="3754" selection-end="3797" vertical-scroll-proportion="0.52583027" vertical-offset="690" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/prijava_tezave_admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="23" selection-start="3441" selection-end="3441" vertical-scroll-proportion="1.5535055" vertical-offset="718" max-vertical-offset="2220">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/translations/translations.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/translations/translations.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="131" column="28" selection-start="4973" selection-end="4973" vertical-scroll-proportion="2.2953367" vertical-offset="636" max-vertical-offset="2865">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/prijava_tezave.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="34" selection-start="512" selection-end="512" vertical-scroll-proportion="-1.7567568" vertical-offset="1215" max-vertical-offset="1770">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/zahtevki.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="110" selection-start="5947" selection-end="5947" vertical-scroll-proportion="0.6642066" vertical-offset="1425" max-vertical-offset="2040">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/admin/podrobnosti_zahtevka.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="61" selection-start="6119" selection-end="6119" vertical-scroll-proportion="0.71304345" vertical-offset="1511" max-vertical-offset="3105">
+        <state line="82" column="110" selection-start="3648" selection-end="3648" vertical-scroll-proportion="0.77490777" vertical-offset="810" max-vertical-offset="3105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="13" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/zahtevki.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="172" column="53" selection-start="5531" selection-end="5536" vertical-scroll-proportion="-104.375" vertical-offset="0" max-vertical-offset="2955">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/zahtevki.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="80" selection-start="1623" selection-end="1623" vertical-scroll-proportion="-30.625" vertical-offset="0" max-vertical-offset="1980">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="49" selection-start="276" selection-end="276" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/paths.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="0.13513513" vertical-offset="0" max-vertical-offset="555">
           <folding />
         </state>
       </provider>

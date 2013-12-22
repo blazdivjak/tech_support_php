@@ -11,7 +11,7 @@ class Zahtevki_Model extends Model {
         parent::__construct();
         //echo "Model za prikaz/izbris zahtevkov";
     }
-    function dodaj($kratek_opis, $datum, $podrocje, $opis, $tel, $userid, $level=2, $state="Čaka na odziv agenta"){
+    function dodaj($kratek_opis, $datum, $podrocje, $opis, $tel, $userid, $level=2, $state="1"){
 
         $query = $this->db->prepare("INSERT INTO ticket (problem, date, type, description, phone, level, userid, state) VALUES('$kratek_opis', '$datum', '$podrocje', '$opis', '$tel', '$level', '$userid', '$state')");
 
@@ -50,6 +50,15 @@ class Zahtevki_Model extends Model {
         //print_r($data);
         return $result;
     }
+    function uporabnik_id($username){
+
+        $query = $this->db->query("SELECT *  FROM user WHERE username='$username'");
+
+        $result = $query->fetchAll();
+        //print_r($data);
+        return $result;
+    }
+
 
     function prikazi_vse($level=2){
 
