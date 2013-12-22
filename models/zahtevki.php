@@ -68,7 +68,7 @@ class Zahtevki_Model extends Model {
 
         return $result;
     }
-    function izbrisi($userid, $ticketid, $level){
+    function izbrisi($userid, $ticketid, $level=1){
 
         if($level==1){
             $query_string= "DELETE FROM ticket WHERE ticketid = '$ticketid' AND userid='$userid'";

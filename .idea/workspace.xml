@@ -6,25 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c458f24d-2c47-47ec-a812-57c915c4eeb5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Validate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Database.php" afterPath="$PROJECT_DIR$/libs/Database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/footer.php" afterPath="$PROJECT_DIR$/include/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/user/index.php" afterPath="$PROJECT_DIR$/views/user/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/paths.php" afterPath="$PROJECT_DIR$/config/paths.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/podrobnosti_zahtevka.php" afterPath="$PROJECT_DIR$/views/admin/podrobnosti_zahtevka.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/prijava.php" afterPath="$PROJECT_DIR$/controllers/prijava.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/login/prijava.php" afterPath="$PROJECT_DIR$/views/login/prijava.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/prijava_tezave.php" afterPath="$PROJECT_DIR$/controllers/prijava_tezave.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/prijava_tezave.php" afterPath="$PROJECT_DIR$/models/prijava_tezave.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/prijava_tezave.php" afterPath="$PROJECT_DIR$/views/admin/prijava_tezave.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/user/prijava_tezave.php" afterPath="$PROJECT_DIR$/views/user/prijava_tezave.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/prijava_tezave_admin.php" afterPath="$PROJECT_DIR$/controllers/prijava_tezave_admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/sp.js" afterPath="$PROJECT_DIR$/js/sp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/translations/translations.xml" afterPath="$PROJECT_DIR$/static/translations/translations.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/zahtevki.php" afterPath="$PROJECT_DIR$/models/zahtevki.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/zahtevki.php" afterPath="$PROJECT_DIR$/views/admin/zahtevki.php" />
     </list>
     <ignored path="ProjektSpletnoProgramiranje.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,37 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sp.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/sp.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="13" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1275">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="zahtevki.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/zahtevki.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="172" column="53" selection-start="5531" selection-end="5536" vertical-scroll-proportion="-104.375" vertical-offset="0" max-vertical-offset="2955">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zahtevki.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/zahtevki.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="80" selection-start="1623" selection-end="1623" vertical-scroll-proportion="-30.625" vertical-offset="0" max-vertical-offset="1980">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Database.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libs/Database.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="49" selection-start="276" selection-end="276" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="240">
+            <state line="64" column="62" selection-start="1892" selection-end="1892" vertical-scroll-proportion="-33.125" vertical-offset="90" max-vertical-offset="2955">
               <folding />
             </state>
           </provider>
@@ -117,7 +72,6 @@
         <option value="$PROJECT_DIR$/include/footer.php" />
         <option value="$PROJECT_DIR$/models/prijava_tezave.php" />
         <option value="$PROJECT_DIR$/js/sp.js" />
-        <option value="$PROJECT_DIR$/models/zahtevki.php" />
         <option value="$PROJECT_DIR$/controllers/prijava_tezave_admin.php" />
         <option value="$PROJECT_DIR$/views/admin/prijava_tezave.php" />
         <option value="$PROJECT_DIR$/controllers/prijava_tezave.php" />
@@ -125,6 +79,7 @@
         <option value="$PROJECT_DIR$/views/admin/podrobnosti_zahtevka.php" />
         <option value="$PROJECT_DIR$/views/admin/zahtevki.php" />
         <option value="$PROJECT_DIR$/libs/Database.php" />
+        <option value="$PROJECT_DIR$/models/zahtevki.php" />
         <option value="$PROJECT_DIR$/config/paths.php" />
       </list>
     </option>
@@ -599,23 +554,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/zahtevki.php">
+    <entry file="file://$PROJECT_DIR$/libs/Database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="53" selection-start="5531" selection-end="5536" vertical-scroll-proportion="-104.375" vertical-offset="0" max-vertical-offset="2955">
+        <state line="11" column="49" selection-start="276" selection-end="276" vertical-scroll-proportion="0.16216215" vertical-offset="0" max-vertical-offset="555">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/zahtevki.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="80" selection-start="1623" selection-end="1623" vertical-scroll-proportion="-30.625" vertical-offset="0" max-vertical-offset="1980">
+        <state line="70" column="48" selection-start="1961" selection-end="1961" vertical-scroll-proportion="1.3560885" vertical-offset="240" max-vertical-offset="1980">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/Database.php">
+    <entry file="file://$PROJECT_DIR$/controllers/zahtevki.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="49" selection-start="276" selection-end="276" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="240">
+        <state line="64" column="62" selection-start="1892" selection-end="1892" vertical-scroll-proportion="-33.125" vertical-offset="90" max-vertical-offset="2955">
           <folding />
         </state>
       </provider>
