@@ -26,7 +26,19 @@ class Zahtevki extends Controller{
             $privilegelvl=Session::get("level");
 
             if($privilegelvl==1){
-                $this->view->tickets=$model->prikazi($userid);
+
+                //GET POST and filter tickets
+               $this->view->query=$_POST['search'];
+                if($this->view->query!=""){
+                    $this->view->tickets= $model->isci($this->view->query, $userid);
+                }else{
+                    $this->view->tickets=$model->prikazi($userid);
+                }
+
+                //test search
+                //$test=$model->isci('Virtualni strežniki', 1);
+                //print_r($test);
+                //exit();
 
                 //admin info
                 foreach($this->view->tickets as $row){

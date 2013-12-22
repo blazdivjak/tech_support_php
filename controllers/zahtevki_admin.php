@@ -32,7 +32,15 @@ class Zahtevki_Admin extends Controller{
                 exit();
             }
             else{
-                $this->view->tickets=$model->prikazi_vse($privilegelvl);
+                //$this->view->tickets=$model->prikazi_vse($privilegelvl);
+
+                //GET POST and filter tickets
+                $this->view->query=$_POST['search'];
+                if($this->view->query!=""){
+                    $this->view->tickets= $model->isci($this->view->query);
+                }else{
+                    $this->view->tickets=$model->prikazi_vse($privilegelvl);
+                }
 
                 //admin info
                 foreach($this->view->tickets as $row){

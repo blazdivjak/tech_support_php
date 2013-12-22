@@ -41,6 +41,35 @@ class Zahtevki_Model extends Model {
         //print_r($data);
         return $result;
     }
+    function isci($query='NONE', $userid='NONE'){
+
+        if($userid=='NONE'){
+            $query = $this->db->query("SELECT *  FROM ticket
+             WHERE problem='$query'
+             OR ticketid='$query'
+             OR date='$query'
+             OR type='$query'
+             OR description='$query'
+             OR phone='$query'
+             OR state='$query'
+             ");
+        }
+        else {
+            $query = $this->db->query("SELECT *  FROM ticket
+             WHERE (problem='$query'
+             OR ticketid='$query'
+             OR date='$query'
+             OR type='$query'
+             OR description='$query'
+             OR phone='$query'
+             OR state='$query')
+             AND userid='$userid'
+             ");
+        }
+        $result = $query->fetchAll();
+        //print_r($data);
+        return $result;
+    }
 
     function uporabnik($userid){
 

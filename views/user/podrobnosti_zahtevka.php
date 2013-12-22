@@ -20,10 +20,10 @@ include 'include/header.php';
                     Spisek vaših zahtevkov za pomoč, ki so že bili rešeni, ali pa še čakajo na obdelavo.
                 </p>
                 <div id="searchbox" class="search">
-                    <form action="zahtevki.html">
+                    <form action="<?php echo STATIC_URL; ?>zahtevki" method="post">
                         <p>
                             <label>Išči:</label>
-                            <input type = "text" id="search" name="search" placeholder = "Iskalni parameter" />
+                            <input type = "text" id="search" value="<?php echo $this->query;?>" name="search" placeholder = "Iskalni parameter" />
                             <button class="btn" type ="submit">Potrdi</button>
                         </p>
                     </form>
